@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FARMVEST — Premium Indian Farmer Producer Company | Bulk Produce & Agricultural Sourcing</title>
+  <meta name="description" content="FARMVEST connects dedicated Indian farming communities with quality agricultural products, reliable wholesale market opportunities, and transparent bulk procurement.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- ======================================================================
+       GLOBAL HEADER & NAVBAR
+       ====================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <!-- Left: Logo & Brand -->
+      <a href="index.html" class="brand-logo" aria-label="FARMVEST Home">
+        <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">FARMVEST</span>
+          <span class="brand-subtitle">FARMER PRODUCER COMPANY</span>
+        </div>
+      </a>
+
+      <!-- Center: Main Navigation -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="farmers.html" class="nav-link">Our Farmers</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right: Controls & CTAs -->
+      <div class="nav-actions">
+        <!-- Bright / Dark Mode Switcher -->
+        <button class="theme-toggle js-theme-toggle" aria-label="Toggle Bright/Dark Mode">
+          <!-- Sun Icon (Shows in Dark Mode) -->
+          <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (Shows in Bright Mode) -->
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- RTL / LTR Direction Toggle Button -->
+        <button class="rtl-toggle js-rtl-toggle" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Text Direction">
+          <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 8h16M15 4l5 4-5 4"/>
+            <path d="M20 16H4M9 12l-5 4 5 4"/>
+          </svg>
+        </button>
+
+        <!-- Primary CTA: Opens Bulk Enquiry Modal -->
+        <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+          <span>BULK ENQUIRY</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="hamburger-btn js-hamburger-btn" aria-label="Open Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE NAVIGATION DRAWER
+       ====================================================================== -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="FARMVEST Home">
+        <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">FARMVEST</span>
+          <span class="brand-subtitle">FARMER PRODUCER COMPANY</span>
+        </div>
+      </a>
+      <button class="drawer-close-btn js-drawer-close" aria-label="Close Navigation Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <!-- 1. All Navlinks Text in Center Alignment -->
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="home-2.html" class="mobile-nav-link">Home 2</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="products.html" class="mobile-nav-link">Products</a>
+      <a href="farmers.html" class="mobile-nav-link">Our Farmers</a>
+      <a href="membership.html" class="mobile-nav-link">Membership</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- 2. Theme and RTL Icons in Center Alignment -->
+    <div class="mobile-drawer-tools">
+      <!-- Bright / Dark Mode Switcher Icon -->
+      <button class="theme-toggle js-theme-toggle" aria-label="Toggle Bright/Dark Mode" title="Toggle Bright/Dark Mode">
+        <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- RTL / LTR Direction Toggle Icon -->
+      <button class="rtl-toggle js-rtl-toggle" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Text Direction">
+        <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8h16M15 4l5 4-5 4"/>
+          <path d="M20 16H4M9 12l-5 4 5 4"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- 3. Last: CTA Button in Center Alignment Orderly -->
+    <div class="mobile-drawer-cta">
+      <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+        <span>BULK ENQUIRY</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         SECTION 01: CINEMATIC AGRICULTURAL HERO (Showcase Stack Layout)
+         Background: image-13.png (Aerial Paddy Landscape)
+         Showcase Cards: image-14.png (Golden Paddy Harvest), image-15.png (Fresh Horticulture), image-5.png (Farmer Collective)
+         ====================================================================== -->
+    <section class="hero-cinema" id="hero-section">
+      <div class="hero-cinema-bg">
+        <img src="images/image-13.png" alt="Panoramic aerial view of lush Indian agricultural paddy fields and river irrigation waterways" loading="eager">
+      </div>
+      <div class="hero-cinema-overlay"></div>
+      
+      <div class="container hero-cinema-container">
+        <div class="hero-cinema-grid">
+          
+          <!-- LEFT COLUMN: Editorial Typography & Dual Action Buttons -->
+          <div class="hero-cinema-left">
+            <div class="hero-eyebrow-pill">
+              <span class="hero-eyebrow-dot"></span>
+              <span>FARMER PRODUCER COMPANY NETWORK</span>
+            </div>
+            
+            <h1 class="hero-showcase-title">
+              GROWING TOGETHER.<br>
+              DELIVERING <span class="hero-highlight-word">FRESHNESS.</span>
+            </h1>
+            
+            <p class="hero-showcase-desc">
+              Discover quality agricultural products sourced directly through dedicated Indian farming communities, built on transparent procurement, scientific grading, and reliable bulk market connections.
+            </p>
+            
+            <div class="hero-showcase-actions">
+              <a href="products.html" class="hero-pill-btn hero-pill-btn-primary">
+                <span>BROWSE FARM CROPS</span>
+                <svg class="hero-btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="#farm-journey" class="hero-pill-btn hero-pill-btn-secondary js-hero-video-trigger" title="Watch our farm-to-market sourcing journey">
+                <span class="hero-play-circle">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                </span>
+                <span>HOW SOURCING WORKS</span>
+              </a>
+            </div>
+
+            <!-- Mini Trust Stats -->
+            <div class="hero-quick-stats">
+              <div class="hero-stat-item">
+                <span class="hero-stat-val">10,000+</span>
+                <span class="hero-stat-lbl">Member Farmers</span>
+              </div>
+              <div class="hero-stat-divider"></div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-val">24,000+</span>
+                <span class="hero-stat-lbl">Acres Cultivated</span>
+              </div>
+              <div class="hero-stat-divider"></div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-val">100%</span>
+                <span class="hero-stat-lbl">Farm-Gate Direct</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: 3D Stacked Overlapping Cards with Indicators -->
+          <div class="hero-cinema-right">
+            <div class="hero-stack-viewport">
+              <div class="hero-stack-wrapper" id="heroStackWrapper">
+                
+                <!-- Card 1 (Front Active Card) -->
+                <div class="hero-stack-card card-slot-1 active" data-index="0" title="Click to view Golden Harvest">
+                  <div class="hero-card-inner">
+                    <img src="images/image-14.png" alt="Farmer carefully harvesting golden ripe paddy stalks with curved sickle" loading="eager">
+                    <div class="hero-card-gradient"></div>
+                    <div class="hero-card-info">
+                      <span class="hero-card-badge">Certified Sourcing</span>
+                      <h3 class="hero-card-title">Golden Paddy &amp; Grains</h3>
+                      <p class="hero-card-sub">Direct procurement from verified farmer clusters</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 (Middle Layer) -->
+                <div class="hero-stack-card card-slot-2" data-index="1" title="Click to view Fresh Vegetables">
+                  <div class="hero-card-inner">
+                    <img src="images/image-15.png" alt="Commercial raised planting beds of vibrant green fresh vegetables" loading="eager">
+                    <div class="hero-card-gradient"></div>
+                    <div class="hero-card-info">
+                      <span class="hero-card-badge">Horticulture</span>
+                      <h3 class="hero-card-title">Fresh Commercial Vegetables</h3>
+                      <p class="hero-card-sub">Daily harvested farm produce with cold-chain grading</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 (Rear Layer) -->
+                <div class="hero-stack-card card-slot-3" data-index="2" title="Click to view Farmer Collective">
+                  <div class="hero-card-inner">
+                    <img src="images/image-5.png" alt="Panoramic golden hour photograph of 15 Indian farmers standing proudly with diverse farm harvest" loading="eager">
+                    <div class="hero-card-gradient"></div>
+                    <div class="hero-card-info">
+                      <span class="hero-card-badge">Producer Collective</span>
+                      <h3 class="hero-card-title">10,000+ Farming Families</h3>
+                      <p class="hero-card-sub">United cooperative strengthening rural livelihood</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Indicators / Dots (matches ● ○ ○ in reference image) -->
+              <div class="hero-stack-indicators" id="heroStackDots" role="tablist" aria-label="Hero showcase slides">
+                <button class="hero-indicator-dot active" data-index="0" aria-label="Slide 1: Golden Paddy &amp; Grains"></button>
+                <button class="hero-indicator-dot" data-index="1" aria-label="Slide 2: Fresh Vegetables"></button>
+                <button class="hero-indicator-dot" data-index="2" aria-label="Slide 3: Farming Collective"></button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 02: TRUSTED FARMER COMMUNITY (Editorial Split)
+         Image: image-1.png (9 Indian farmers in green field)
+         ====================================================================== -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="editorial-split">
+          <div class="split-image-container reveal-item">
+            <img src="images/image-1.png" alt="A proud collective of Indian male and female member farmers standing together in fertile agricultural fields" loading="lazy">
+          </div>
+          <div class="split-content reveal-item">
+            <div class="eyebrow">HOW OUR COLLECTIVE WORKS</div>
+            <h2>OWNED BY LOCAL FARMERS.<br>BUILT FOR FAIR AND HONEST PRICES.</h2>
+            <p>At FARMVEST, our strength begins directly with our grassroots farming families. By organizing individual smallholders into a unified Farmer Producer Company, we eliminate exploitative intermediaries and establish organized collective aggregation.</p>
+            <p>Our farmers receive direct access to agronomic training, quality organic inputs, fair digital weighment, and structured bulk market linkages that ensure dignified livelihoods and stable earnings.</p>
+            <div class="split-actions">
+              <a href="farmers.html" class="btn btn-primary">
+                <span>SEE OUR FARMER CLUSTERS</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="membership.html" class="btn btn-secondary">
+                <span>BECOME A MEMBER</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 03: EXPLORE OUR AGRICULTURAL PRODUCTS (6 Category Cards)
+         Strictly Even Number: Exactly 6 Cards!
+         Images: 15, 89, 14, 46, 49, 112
+         ====================================================================== -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">FRESH FARM CROPS</div>
+          <h2>QUALITY CROPS HARVESTED DIRECTLY FROM VILLAGE FARMS</h2>
+          <p>Browse farm-fresh vegetables, seasonal fruits, grains, pulses, and spices grown by our certified Indian farmer groups with strict quality grading.</p>
+        </div>
+
+        <div class="grid-6">
+          <!-- Card 1: Fresh Vegetables -->
+          <div class="category-card reveal-item">
+            <div class="category-card-img">
+              <img src="images/image-15.png" alt="Commercial raised planting beds of vibrant green fresh vegetables" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Horticulture</span>
+              <h3>Fresh Vegetables</h3>
+              <p>Tomatoes, red onions, cauliflowers, cabbage, cucumbers, eggplants, and root crops picked fresh daily.</p>
+              <div class="category-card-footer">
+                <a href="products.html?category=vegetables" class="link-with-arrow">
+                  <span>Explore Vegetables</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Fresh Fruits -->
+          <div class="category-card reveal-item">
+            <div class="category-card-img">
+              <img src="images/image-89.png" alt="Golden ripe Indian Alphonso mangoes resting on deep green orchard leaves" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Orchard Produce</span>
+              <h3>Fresh Fruits</h3>
+              <p>Premium mangoes, bananas, pomegranates, pineapples, table grapes, sweet oranges, and papayas.</p>
+              <div class="category-card-footer">
+                <a href="products.html?category=fruits" class="link-with-arrow">
+                  <span>Explore Fruits</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Rice & Paddy -->
+          <div class="category-card reveal-item">
+            <div class="category-card-img">
+              <img src="images/image-14.png" alt="Farmer carefully harvesting golden ripe paddy stalks with curved sickle" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Staple Grains</span>
+              <h3>Rice & Paddy</h3>
+              <p>Aromatic Basmati, Ponni, traditional unpolished red rice, and single-origin staple milling paddy.</p>
+              <div class="category-card-footer">
+                <a href="products.html?category=rice" class="link-with-arrow">
+                  <span>Explore Rice</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Millets & Grains -->
+          <div class="category-card reveal-item">
+            <div class="category-card-img">
+              <img src="images/image-46.png" alt="Assortment of diverse nutritious millets in rustic earthenware bowls" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Nutri-Cereals</span>
+              <h3>Millets & Grains</h3>
+              <p>Climate-resilient finger millet (ragi), foxtail millet, pearl millet (bajra), barnyard, and kodo millets.</p>
+              <div class="category-card-footer">
+                <a href="products.html?category=millets" class="link-with-arrow">
+                  <span>Explore Millets</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Pulses & Lentils -->
+          <div class="category-card reveal-item">
+            <div class="category-card-img">
+              <img src="images/image-49.png" alt="Macro photograph of clean uniform whole green gram pulses" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">High Protein</span>
+              <h3>Pulses & Lentils</h3>
+              <p>Clean whole green gram (moong), pigeon pea (toor dal), chickpeas, and naturally sun-cured lentils.</p>
+              <div class="category-card-footer">
+                <a href="products.html?category=pulses" class="link-with-arrow">
+                  <span>Explore Pulses</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Spices & Plantation -->
+          <div class="category-card reveal-item">
+            <div class="category-card-img">
+              <img src="images/image-112.png" alt="Raw golden turmeric rhizomes and pure ground turmeric powder on wood" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Commercial Crops</span>
+              <h3>Spices & Plantation</h3>
+              <p>High-curcumin turmeric, fresh ginger, sun-dried red chillies, whole cardamom, and mature coconuts.</p>
+              <div class="category-card-footer">
+                <a href="products.html?category=spices" class="link-with-arrow">
+                  <span>Explore Spices</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 04: OUR AGRICULTURAL CAPABILITIES (Asymmetric Visual Split)
+         Images: 58 (FPO aggregation center diagram) & 60 (Automated roller sorting)
+         ====================================================================== -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="editorial-split reversed">
+          <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+            <div class="split-image-container reveal-item" style="aspect-ratio: 16/10;">
+              <img src="images/image-58.png" alt="Infographic photograph of FPO Aggregation Centre value chain operations" loading="lazy">
+            </div>
+            <div class="split-image-container reveal-item" style="aspect-ratio: 16/9;">
+              <img src="images/image-60.png" alt="Automated high-capacity roller conveyor sorting fresh farm produce" loading="lazy">
+            </div>
+          </div>
+          <div class="split-content reveal-item">
+            <div class="eyebrow">COMPLETE HARVEST-TO-DELIVERY SUPPORT</div>
+            <h2>HOW WE SUPPORT FARMERS AND DELIVER TO WHOLESALE BUYERS</h2>
+            <p>We handle everything from village field collection to cold-chain transport, ensuring fresh quality, transparent digital weighment, and zero middlemen markups.</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 14px; margin: 18px 0 28px;">
+              <div class="service-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Farm-Gate Produce Aggregation:</strong> Village collection points with digital weighing and transparent records.</div>
+              </div>
+              <div class="service-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Scientific Sorting & Grading:</strong> Multi-tier sizing, manual defect removal, and moisture control.</div>
+              </div>
+              <div class="service-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Customized B2B Packaging:</strong> Corrugated crates, mesh bags, and vacuum food-grade packaging.</div>
+              </div>
+              <div class="service-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Logistics & Cold Storage:</strong> Pre-cooling coordination and reliable freight dispatch to wholesale destinations.</div>
+              </div>
+            </div>
+
+            <div>
+              <a href="services.html" class="btn btn-primary">
+                <span>SEE ALL SOURCING SERVICES</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 05: WHY PARTNER WITH US (Strategic Advantages Card Slider)
+         Horizontal featured card layout matching reference:
+         Left: Rounded Image | Right: Title & Description
+         Side Arrows (< and >) & Pagination Dots
+         Images: 2, 104, 71, 69
+         ====================================================================== -->
+    <section class="section bg-light" id="strategic-advantages">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <div class="eyebrow">WHY CHOOSE FARMVEST</div>
+          <h2>FAIR PRICES FOR FARMERS, RELIABLE BULK SUPPLY FOR BUYERS</h2>
+          <p>We give farmers transparent digital payments and guaranteed buyers, while giving businesses fresh, certified, traceable farm produce straight from rural clusters.</p>
+        </div>
+
+        <div class="advantage-slider-wrapper reveal-item">
+          <!-- Previous Button -->
+          <button class="slider-nav-btn prev-btn js-advantage-prev" aria-label="Previous strategic advantage">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+
+          <!-- Slider Viewport & Slides Track -->
+          <div class="advantage-slider-viewport">
+            <div class="advantage-slider-track" id="advantageSliderTrack">
+              
+              <!-- Slide 1 -->
+              <div class="advantage-slide active" data-slide="0">
+                <div class="advantage-card">
+                  <div class="advantage-card-img">
+                    <img src="images/image-2.png" alt="FPO leadership team and farmer coordinators standing together in field" loading="lazy">
+                  </div>
+                  <div class="advantage-card-content">
+                    <span class="advantage-pillar-tag">Pillar 01 · Producer Trust</span>
+                    <h3 class="advantage-card-title">Farmer Community Network</h3>
+                    <p class="advantage-card-desc">Direct access to thousands of smallholder producers organized in democratic clusters, ensuring authentic origin tracking and community-first pricing.</p>
+                    <div class="advantage-card-meta">
+                      <span class="meta-badge">10,000+ Active Members</span>
+                      <span class="meta-badge">Direct Farm-Gate Price</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="advantage-slide" data-slide="1">
+                <div class="advantage-card">
+                  <div class="advantage-card-img">
+                    <img src="images/image-104.png" alt="Diverse rice varieties displayed in neat wooden bowls" loading="lazy">
+                  </div>
+                  <div class="advantage-card-content">
+                    <span class="advantage-pillar-tag">Pillar 02 · Wide Portfolio</span>
+                    <h3 class="advantage-card-title">Diverse Product Categories</h3>
+                    <p class="advantage-card-desc">Single-window wholesale procurement spanning fresh vegetables, orchard fruits, indigenous millets, traditional paddy, and essential spices.</p>
+                    <div class="advantage-card-meta">
+                      <span class="meta-badge">6 Produce Verticals</span>
+                      <span class="meta-badge">Seasonal &amp; Year-Round</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="advantage-slide" data-slide="2">
+                <div class="advantage-card">
+                  <div class="advantage-card-img">
+                    <img src="images/image-71.png" alt="Quality inspection of harvested red onions in wholesale mandi warehouse" loading="lazy">
+                  </div>
+                  <div class="advantage-card-content">
+                    <span class="advantage-pillar-tag">Pillar 03 · Quality Verification</span>
+                    <h3 class="advantage-card-title">Organized Produce Handling</h3>
+                    <p class="advantage-card-desc">Systematic farm-gate inspection, certified weight verification, and hygienic packing standards tailored to institutional specifications.</p>
+                    <div class="advantage-card-meta">
+                      <span class="meta-badge">Certified Weighment</span>
+                      <span class="meta-badge">Moisture &amp; Grade Tested</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="advantage-slide" data-slide="3">
+                <div class="advantage-card">
+                  <div class="advantage-card-img">
+                    <img src="images/image-69.png" alt="Active wholesale mandi yard with commercial trucks and fresh produce trading" loading="lazy">
+                  </div>
+                  <div class="advantage-card-content">
+                    <span class="advantage-pillar-tag">Pillar 04 · Commercial Reliability</span>
+                    <h3 class="advantage-card-title">Buyer-Focused Enquiries</h3>
+                    <p class="advantage-card-desc">Transparent quotes, prompt batch traceability, scheduled recurring supply contracts, and professional customer coordination.</p>
+                    <div class="advantage-card-meta">
+                      <span class="meta-badge">Quick Turnaround RFQ</span>
+                      <span class="meta-badge">Scheduled Deliveries</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Next Button -->
+          <button class="slider-nav-btn next-btn js-advantage-next" aria-label="Next strategic advantage">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+
+        <!-- Slider Pagination Dots -->
+        <div class="advantage-slider-dots" id="advantageSliderDots" role="tablist" aria-label="Strategic advantage slides">
+          <button class="slider-dot active" data-index="0" aria-label="Slide 1: Farmer Community Network"></button>
+          <button class="slider-dot" data-index="1" aria-label="Slide 2: Diverse Product Categories"></button>
+          <button class="slider-dot" data-index="2" aria-label="Slide 3: Organized Produce Handling"></button>
+          <button class="slider-dot" data-index="3" aria-label="Slide 4: Buyer-Focused Enquiries"></button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 06: FARM TO MARKET JOURNEY (Alternating Center-Line Timeline)
+         1st card in left, 2nd card in right, with center line & clean badges (no icons)
+         Visuals: 77 (Digital weighment) & 70 (Truck loading dispatch)
+         ====================================================================== -->
+    <section class="section bg-white" id="farm-journey">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <div class="eyebrow">HOW OUR SOURCING WORKS</div>
+          <h2>FROM VILLAGE HARVEST TO YOUR WAREHOUSE IN 5 STEPS</h2>
+          <p>See how we collect fresh crops at village hubs, test quality, pack to specifications, and deliver quickly to bulk buyers.</p>
+        </div>
+
+        <div class="timeline-centerline-wrapper">
+          <div class="timeline-center-stem" aria-hidden="true"></div>
+
+          <!-- Step 01: LEFT -->
+          <div class="timeline-entry entry-left reveal-item">
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="timeline-phase-pill">Stage 01</span>
+                <span class="timeline-tag-text">Field Planning</span>
+              </div>
+              <h3 class="timeline-card-title">Farmer Participation</h3>
+              <p class="timeline-card-desc">Member farmers coordinate seasonal planting with FPC agronomists to align crop acreage with verified bulk market demand.</p>
+              <div class="timeline-card-footer">
+                <span class="timeline-metric-item">Agronomic Planning</span>
+              </div>
+            </div>
+            <div class="timeline-marker-node" aria-label="Step 1">
+              <span>01</span>
+            </div>
+          </div>
+
+          <!-- Step 02: RIGHT -->
+          <div class="timeline-entry entry-right reveal-item">
+            <div class="timeline-marker-node" aria-label="Step 2">
+              <span>02</span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="timeline-phase-pill">Stage 02</span>
+                <span class="timeline-tag-text">Direct Ingestion</span>
+              </div>
+              <h3 class="timeline-card-title">Produce Collection</h3>
+              <p class="timeline-card-desc">Fresh harvest gathered at village aggregation points with digital weighment scales, instant receipt slips, and moisture checks.</p>
+              <div class="timeline-card-footer">
+                <span class="timeline-metric-item">Digital Weighment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 03: LEFT -->
+          <div class="timeline-entry entry-left reveal-item">
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="timeline-phase-pill">Stage 03</span>
+                <span class="timeline-tag-text">Quality Assurance</span>
+              </div>
+              <h3 class="timeline-card-title">Sorting &amp; Grading</h3>
+              <p class="timeline-card-desc">Produce segregated by size, color, maturity, and skin quality to meet precise institutional and commercial buyer specifications.</p>
+              <div class="timeline-card-footer">
+                <span class="timeline-metric-item">Quality Standards</span>
+              </div>
+            </div>
+            <div class="timeline-marker-node" aria-label="Step 3">
+              <span>03</span>
+            </div>
+          </div>
+
+          <!-- Step 04: RIGHT -->
+          <div class="timeline-entry entry-right reveal-item">
+            <div class="timeline-marker-node" aria-label="Step 4">
+              <span>04</span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="timeline-phase-pill">Stage 04</span>
+                <span class="timeline-tag-text">Commercial RFQ</span>
+              </div>
+              <h3 class="timeline-card-title">Buyer Enquiry</h3>
+              <p class="timeline-card-desc">Wholesale clients submit volume, packaging, and scheduled delivery requirements through our transparent bulk procurement system.</p>
+              <div class="timeline-card-footer">
+                <span class="timeline-metric-item">Transparent Quotes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 05: LEFT -->
+          <div class="timeline-entry entry-left reveal-item">
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="timeline-phase-pill">Stage 05</span>
+                <span class="timeline-tag-text">Secured Logistics</span>
+              </div>
+              <h3 class="timeline-card-title">Supply Coordination</h3>
+              <p class="timeline-card-desc">Final dispatch via organized commercial freight with batch coding, temperature controls, and prompt delivery tracking to client destinations.</p>
+              <div class="timeline-card-footer">
+                <span class="timeline-metric-item">Secured Batch Freight</span>
+              </div>
+            </div>
+            <div class="timeline-marker-node" aria-label="Step 5">
+              <span>05</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Real Field Operations Visuals: Dual Showcase Grid -->
+        <div class="operation-visuals-grid">
+          <div class="operation-visual-card reveal-item">
+            <div class="operation-visual-img">
+              <img src="images/image-77.png" alt="Village level collection point with certified digital weighing scale" loading="lazy">
+            </div>
+            <div class="operation-visual-scrim"></div>
+            <div class="operation-visual-content">
+              <span class="operation-pill">STAGE 02 · COLLECTION</span>
+              <h3>Village Aggregation &amp; Digital Weighment</h3>
+              <p>Certified electronic scales and instant digital receipting ensure transparent farm-gate transactions with zero weight loss.</p>
+            </div>
+          </div>
+
+          <div class="operation-visual-card reveal-item">
+            <div class="operation-visual-img">
+              <img src="images/image-70.png" alt="Laborers loading produce sacks securely onto cargo freight truck" loading="lazy">
+            </div>
+            <div class="operation-visual-scrim"></div>
+            <div class="operation-visual-content">
+              <span class="operation-pill">STAGE 05 · DISPATCH</span>
+              <h3>Organized Logistics &amp; Bulk Consignment</h3>
+              <p>Standardized crate packing, lot numbering, and scheduled commercial freight ensure timely delivery to wholesale buyers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 07: FEATURED PRODUCTS (6 Individual Sample Products)
+         Strictly Even Number: Exactly 6 Cards!
+         Images: 79 (Tomatoes), 80 (Onions), 83 (Green chillies), 87 (Potatoes), 105 (Basmati rice), 106 (Ragi)
+         ====================================================================== -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">HARVESTS READY FOR ORDER</div>
+          <h2>FARM-FRESH PRODUCE AVAILABLE FOR IMMEDIATE BULK PROCUREMENT</h2>
+          <p>Check out our popular farm crops available for wholesale orders. Click 'Quick View' for specifications or 'Order Bulk' to request a quote.</p>
+        </div>
+
+        <div class="grid-6">
+          <!-- Product 1: Fresh Tomatoes -->
+          <div class="product-card reveal-item">
+            <div class="product-card-img">
+              <img src="images/image-79.png" alt="Crisp glossy farm fresh red tomatoes with green calyx" loading="lazy">
+              <span class="product-badge">Fresh Harvest</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Vegetables</span>
+              <h3>Farm Fresh Tomatoes</h3>
+              <p class="product-desc">Uniformly graded, firm hybrid and desi tomatoes ideal for institutional catering and processing.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">25 kg Plastic Crates</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details" 
+                  data-name="Farm Fresh Tomatoes" 
+                  data-category-name="Vegetables"
+                  data-image="images/image-79.png"
+                  data-desc="Firm, high-lycopene tomatoes harvested at optimal breaker stage for maximum shelf life. Fully graded by size and blemish-free."
+                  data-packaging="25 kg Food-Grade Crates / Corrugated Boxes"
+                  data-moq="500 kg">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Farm Fresh Tomatoes">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: Premium Red Onions -->
+          <div class="product-card reveal-item">
+            <div class="product-card-img">
+              <img src="images/image-80.png" alt="Two whole unpeeled red onions with crisp skins" loading="lazy">
+              <span class="product-badge">Grade-A</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Vegetables</span>
+              <h3>Premium Red Onions</h3>
+              <p class="product-desc">Naturally cured, medium-to-large pungent red onions with tight skins and long storage endurance.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">40 kg / 50 kg Mesh Bags</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details" 
+                  data-name="Premium Red Onions" 
+                  data-category-name="Vegetables"
+                  data-image="images/image-80.png"
+                  data-desc="Sun-cured red onions from trusted Maharashtra and Karnataka growing belts. Graded 45mm-55mm and 55mm+ diameter."
+                  data-packaging="25kg & 50kg Ventilated Mesh Sacks"
+                  data-moq="1 Metric Ton">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Premium Red Onions">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: Fresh Green Chillies -->
+          <div class="product-card reveal-item">
+            <div class="product-card-img">
+              <img src="images/image-83.png" alt="Vibrant fresh green hot chillies piled together" loading="lazy">
+              <span class="product-badge">Pungent & Crisp</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Spices & Condiments</span>
+              <h3>Fresh Green Chillies</h3>
+              <p class="product-desc">Slender, pungent green chillies handpicked with stems intact for maximum spice content and shelf longevity.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">10 kg / 20 kg Cartons</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details" 
+                  data-name="Fresh Green Chillies" 
+                  data-category-name="Spices & Condiments"
+                  data-image="images/image-83.png"
+                  data-desc="G4 and Teja variety green chillies carefully washed, sorted, and boxed for cold chain distribution."
+                  data-packaging="10 kg Corrugated Boxes"
+                  data-moq="250 kg">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Fresh Green Chillies">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4: Grade-A Table Potatoes -->
+          <div class="product-card reveal-item">
+            <div class="product-card-img">
+              <img src="images/image-87.png" alt="Heap of clean washed yellow farm potatoes" loading="lazy">
+              <span class="product-badge">Staple Bulk</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Vegetables</span>
+              <h3>Grade-A Table Potatoes</h3>
+              <p class="product-desc">Evenly shaped, smooth-skinned table potatoes (Kufri Jyoti / Pukhraj) sorted for commercial frying and cooking.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">50 kg Jute Gunny Sacks</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details" 
+                  data-name="Grade-A Table Potatoes" 
+                  data-category-name="Vegetables"
+                  data-image="images/image-87.png"
+                  data-desc="Cleaned soil-free potatoes cured in humidity-controlled cold stores to prevent sprouting and greening."
+                  data-packaging="50 kg High-Strength Jute Bags"
+                  data-moq="2 Metric Tons">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Grade-A Table Potatoes">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5: Aromatic Basmati Rice -->
+          <div class="product-card reveal-item">
+            <div class="product-card-img">
+              <img src="images/image-105.png" alt="Slender long-grain white Basmati rice in a light wooden bowl" loading="lazy">
+              <span class="product-badge">Aged Grain</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Grains & Rice</span>
+              <h3>Aromatic Basmati Rice</h3>
+              <p class="product-desc">Extra-long slender grain rice aged for exceptional aroma, non-sticky cooking, and fluffy elongation.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">25 kg / 50 kg PP Bags</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details" 
+                  data-name="Aromatic Basmati Rice" 
+                  data-category-name="Grains & Rice"
+                  data-image="images/image-105.png"
+                  data-desc="Single-origin 1121 and Traditional Basmati milled in modern HACCP certified sorting plants."
+                  data-packaging="25 kg / 50 kg Moisture-Proof Poly Bags"
+                  data-moq="1 Metric Ton">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Aromatic Basmati Rice">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6: Finger Millet (Ragi) -->
+          <div class="product-card reveal-item">
+            <div class="product-card-img">
+              <img src="images/image-106.png" alt="Turned wooden bowl filled with reddish brown finger millet ragi seeds" loading="lazy">
+              <span class="product-badge">Superfood</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Millets</span>
+              <h3>Finger Millet (Ragi)</h3>
+              <p class="product-desc">Naturally grown calcium-rich whole grain ragi sourced directly from tribal and dryland farming collectives.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">30 kg / 50 kg Bags</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details" 
+                  data-name="Finger Millet (Ragi)" 
+                  data-category-name="Millets"
+                  data-image="images/image-106.png"
+                  data-desc="Cleaned, destoned whole finger millet grain suitable for milling into flour, baby foods, and health mixes."
+                  data-packaging="30 kg HDPE Bags"
+                  data-moq="500 kg">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Finger Millet (Ragi)">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="products.html" class="btn btn-primary">
+            <span>VIEW COMPLETE WHOLESALE CATALOG</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 08: FINAL BUSINESS ENQUIRY CTA
+         Image: image-5.png (Golden-hour panoramic harvest)
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal-item">
+          <div class="cta-banner-bg">
+            <img src="images/image-5.png" alt="Panoramic golden hour photograph of 15 Indian farmers standing proudly with diverse farm harvest" loading="lazy">
+          </div>
+          <div class="cta-banner-content">
+            <div class="eyebrow" style="background: rgba(255,255,255,0.18); color: #8ED199;">
+              READY TO PARTNER WITH US?
+            </div>
+            <h2>LOOKING FOR RELIABLE WHOLESALE SUPPLY OR WANT TO JOIN AS A FARMER?</h2>
+            <p>Whether you are a commercial buyer seeking verified farm-gate produce or an Indian farmer wanting guaranteed fair prices, we are here to support your growth.</p>
+            <div class="btn-group">
+              <button class="btn btn-white" data-open-modal="bulkEnquiryModal">
+                <span>REQUEST WHOLESALE QUOTE</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <a href="membership.html" class="btn btn-secondary">
+                <span>BECOME A MEMBER</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       GLOBAL FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">FARMVEST</span>
+              <span class="brand-subtitle" style="color: #8ED199;">FARMER PRODUCER COMPANY</span>
+            </div>
+          </div>
+          <p>Connecting dedicated farming communities with quality agricultural products, reliable market opportunities, and meaningful business partnerships across India.</p>
+          <!-- Social Media Links -->
+          <div class="footer-social-links" aria-label="Social Media Channels">
+            <a href="https://facebook.com" class="footer-social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://x.com" class="footer-social-icon" aria-label="X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="footer-social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="footer-social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="footer-social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home (Discovery)</a>
+            <a href="home-2.html" class="footer-link">Home 2 (Stories)</a>
+            <a href="about.html" class="footer-link">About FARMVEST</a>
+            <a href="services.html" class="footer-link">Agricultural Services</a>
+            <a href="products.html" class="footer-link">Wholesale Catalogue</a>
+            <a href="farmers.html" class="footer-link">Our Farmers</a>
+            <a href="membership.html" class="footer-link">Farmer Membership</a>
+            <a href="contact.html" class="footer-link">Contact & Hubs</a>
+          </div>
+        </div>
+
+        <!-- Product Categories -->
+        <div>
+          <h4 class="footer-title">Commodities</h4>
+          <div class="footer-links">
+            <a href="products.html?category=vegetables" class="footer-link">Fresh Vegetables</a>
+            <a href="products.html?category=fruits" class="footer-link">Fresh Fruits</a>
+            <a href="products.html?category=rice" class="footer-link">Rice & Grains</a>
+            <a href="products.html?category=millets" class="footer-link">Millets & Superfoods</a>
+            <a href="products.html?category=pulses" class="footer-link">Pulses & Lentils</a>
+            <a href="products.html?category=spices" class="footer-link">Spices & Plantation</a>
+          </div>
+        </div>
+
+        <!-- Business & Governance -->
+        <div>
+          <h4 class="footer-title">Business & FPC</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link" data-open-modal="bulkEnquiryModal">Bulk Wholesale RFQ</a>
+            <a href="#" class="footer-link" data-open-modal="membershipEnquiryModal">Farmer Membership</a>
+            <a href="services.html" class="footer-link">Produce Procurement</a>
+            <a href="services.html" class="footer-link">Grading & Packaging</a>
+            <a href="contact.html" class="footer-link">Institutional Buyers</a>
+            <a href="about.html" class="footer-link">FPC Governance</a>
+          </div>
+        </div>
+
+        <!-- Contact & Hubs -->
+        <div>
+          <h4 class="footer-title">Company Office</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>FARMVEST Producer Company Ltd.<br>APMC Market Complex, Pune - Bangalore Agri Corridor, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 (0) 80 2345 6789 / 9876</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>procurement@farmvest-fpc.demo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 FARMVEST Farmer Producer Company Limited. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="about.html" style="color: rgba(255,255,255,0.6);">Privacy Policy</a>
+          <a href="about.html" style="color: rgba(255,255,255,0.6);">Terms of Trade</a>
+          <a href="contact.html" style="color: rgba(255,255,255,0.6);">Procurement Bylaws</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       REUSABLE MODAL 01: BULK WHOLESALE ENQUIRY
+       ====================================================================== -->
+  <div class="modal-overlay" id="bulkEnquiryModal" role="dialog" aria-modal="true" aria-labelledby="bulkModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow" style="font-size: 0.75rem; margin-bottom: 6px;">WHOLESALE PURCHASE RFQ</span>
+          <h3 id="bulkModalTitle">Submit Bulk Product Enquiry</h3>
+        </div>
+        <button class="modal-close-btn js-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Enquiry Form -->
+      <form class="js-validated-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name <span class="required">*</span></label>
+            <input type="text" name="name" class="form-input" placeholder="e.g. Rajesh Sharma" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Business / Company Name <span class="required">*</span></label>
+            <input type="text" name="company" class="form-input" placeholder="e.g. Apex Food Processing Ltd." required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="required">*</span></label>
+            <input type="tel" name="phone" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address <span class="required">*</span></label>
+            <input type="email" name="email" class="form-input" placeholder="procurement@company.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Product Interested In <span class="required">*</span></label>
+            <input type="text" name="product" class="form-input" placeholder="e.g. Farm Fresh Tomatoes" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Required Quantity (kg / Tons) <span class="required">*</span></label>
+            <input type="text" name="quantity" class="form-input" placeholder="e.g. 5 Metric Tons" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Delivery Location / Mandi Destination <span class="required">*</span></label>
+          <input type="text" name="location" class="form-input" placeholder="City, State, Warehouse PIN code" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Additional Message / Quality Specifications</label>
+          <textarea name="message" class="form-textarea" rows="3" placeholder="Specify grading size, packaging preferences (crates/bags), delivery schedule, or recurring purchase needs..."></textarea>
+          <span class="form-help">*Demonstration form: In live deployment, submissions route directly to FPC sales CRM.</span>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 24px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 340px; justify-content: center;">
+            <span>SUBMIT BULK ENQUIRY</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <!-- Success State -->
+      <div class="modal-success-state">
+        <div class="modal-success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Enquiry Submitted Successfully!</h3>
+        <p style="margin: 12px 0 20px;">Thank you for your bulk enquiry. Our commercial procurement team will review your quantity and delivery requirements and respond within 24 business hours.</p>
+        <span class="eyebrow" style="font-size: 0.725rem;">DEMONSTRATION SUBMISSION COMPLETE</span>
+        <div style="margin-top: 24px;">
+          <button type="button" class="btn btn-primary js-modal-close">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       REUSABLE MODAL 02: PRODUCT DETAILS MODAL VIEWER
+       ====================================================================== -->
+  <div class="modal-overlay" id="productDetailModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width: 720px;">
+      <div class="modal-header">
+        <div>
+          <span class="product-category-tag js-modal-prod-category">Vegetables</span>
+          <h3 class="js-modal-prod-title">Product Name</h3>
+        </div>
+        <button class="modal-close-btn js-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; margin-bottom: 24px;">
+        <div style="border-radius: var(--radius-md); overflow: hidden; background: var(--light-bg); aspect-ratio: 1/1;">
+          <img src="" alt="Product view" class="js-modal-prod-img" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div>
+          <h4 style="margin-bottom: 8px;">Product Overview</h4>
+          <p class="js-modal-prod-desc" style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 18px;">Product description goes here.</p>
+          
+          <div style="background: var(--light-bg); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 18px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.88rem;">
+              <span style="color: var(--muted-text);">Packaging Options:</span>
+              <strong class="js-modal-prod-packaging">Plastic Crates / Gunny Bags</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.88rem;">
+              <span style="color: var(--muted-text);">Minimum Order Qty (MOQ):</span>
+              <strong class="js-modal-prod-moq">500 kg</strong>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <button class="btn btn-primary js-modal-prod-enquire-btn" style="width: 100%;">
+              <span>ENQUIRE FOR THIS PRODUCT</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <a href="product-details.html" class="btn btn-outline" style="width: 100%; text-align: center;">
+              <span>VIEW FULL SPECIFICATION PAGE</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       REUSABLE MODAL 03: FARMER MEMBERSHIP ENQUIRY
+       ====================================================================== -->
+  <div class="modal-overlay" id="membershipEnquiryModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow" style="font-size: 0.75rem; margin-bottom: 6px;">GROW WITH OUR COOPERATIVE</span>
+          <h3>Farmer Membership Application</h3>
+        </div>
+        <button class="modal-close-btn js-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <form class="js-validated-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Farmer Full Name <span class="required">*</span></label>
+            <input type="text" name="farmer_name" class="form-input" placeholder="e.g. Ramesh Patil" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="required">*</span></label>
+            <input type="tel" name="phone" class="form-input" placeholder="+91 98765 00000" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Village / Gram Panchayat <span class="required">*</span></label>
+            <input type="text" name="village" class="form-input" placeholder="e.g. Shivajinagar" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">District & State <span class="required">*</span></label>
+            <input type="text" name="district" class="form-input" placeholder="e.g. Belagavi, Karnataka" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Main Crops / Agricultural Produce <span class="required">*</span></label>
+            <input type="text" name="crops" class="form-input" placeholder="e.g. Paddy, Tomatoes, Ragi" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Total Land Holding (Acres) <span class="required">*</span></label>
+            <input type="text" name="land" class="form-input" placeholder="e.g. 3.5 Acres" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Additional Message / Inquiries</label>
+          <textarea name="message" class="form-textarea" rows="3" placeholder="Tell us about your current farming practices, irrigation sources, or specific support you need..."></textarea>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 24px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 340px; justify-content: center;">
+            <span>APPLY FOR MEMBERSHIP</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="modal-success-state">
+        <div class="modal-success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Application Received!</h3>
+        <p style="margin: 12px 0 20px;">Welcome! Our village cluster coordinator will reach out to schedule an in-person field visit and discuss your membership share allocation.</p>
+        <button type="button" class="btn btn-primary js-modal-close">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top floating button -->
+  <button class="back-to-top" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

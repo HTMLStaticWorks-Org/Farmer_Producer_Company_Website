@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Membership — FARMVEST Farmer Producer Company | Collective Prosperity</title>
+  <meta name="description" content="Discover how smallholder farmers join FARMVEST to unlock bulk input discounts, fair digital weighment, direct market linkages, and democratic equity participation.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="FARMVEST Home">
+        <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">FARMVEST</span>
+          <span class="brand-subtitle">FARMER PRODUCER COMPANY</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="farmers.html" class="nav-link">Our Farmers</a>
+        <a href="membership.html" class="nav-link active">Membership</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle js-theme-toggle" aria-label="Toggle Bright/Dark Mode">
+          <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- RTL / LTR Direction Toggle Button -->
+        <button class="rtl-toggle js-rtl-toggle" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Text Direction">
+          <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 8h16M15 4l5 4-5 4"/>
+            <path d="M20 16H4M9 12l-5 4 5 4"/>
+          </svg>
+        </button>
+        <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+          <span>BULK ENQUIRY</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <button class="hamburger-btn js-hamburger-btn" aria-label="Open Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="FARMVEST Home">
+        <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">FARMVEST</span>
+          <span class="brand-subtitle">FARMER PRODUCER COMPANY</span>
+        </div>
+      </a>
+      <button class="drawer-close-btn js-drawer-close" aria-label="Close Navigation Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <!-- 1. All Navlinks Text in Center Alignment -->
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="home-2.html" class="mobile-nav-link">Home 2</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="products.html" class="mobile-nav-link">Products</a>
+      <a href="farmers.html" class="mobile-nav-link">Our Farmers</a>
+      <a href="membership.html" class="mobile-nav-link active">Membership</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- 2. Theme and RTL Icons in Center Alignment -->
+    <div class="mobile-drawer-tools">
+      <!-- Bright / Dark Mode Switcher Icon -->
+      <button class="theme-toggle js-theme-toggle" aria-label="Toggle Bright/Dark Mode" title="Toggle Bright/Dark Mode">
+        <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- RTL / LTR Direction Toggle Icon -->
+      <button class="rtl-toggle js-rtl-toggle" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Text Direction">
+        <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8h16M15 4l5 4-5 4"/>
+          <path d="M20 16H4M9 12l-5 4 5 4"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- 3. Last: CTA Button in Center Alignment Orderly -->
+    <div class="mobile-drawer-cta">
+      <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+        <span>BULK ENQUIRY</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         SECTION 01: MEMBERSHIP HERO
+         Image: image-31.png (Polyhouse cucumber farming with modern mulch)
+         ====================================================================== -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img src="images/image-31.png" alt="Trellised polyhouse cucumber plantation equipped with drip irrigation" loading="eager">
+      </div>
+      <div class="container page-hero-content">
+        <div class="eyebrow" style="background: rgba(255,255,255,0.18); color: #8ED199;">
+          FARMER MEMBERSHIP BENEFITS
+        </div>
+        <h1>GROW TOGETHER. PARTICIPATE. PROGRESS.</h1>
+        <p>Become a shareholder and active member of FARMVEST. Join over 12,000 forward-thinking Indian farmers who benefit from collective bulk purchasing, scientific agronomic advisory, transparent digital weighment, and guaranteed market linkages.</p>
+        <div style="margin-top: 24px;">
+          <button class="btn btn-primary" data-open-modal="membershipEnquiryModal" style="background-color: #6FA879; color: #103B2B !important;">
+            <span>BECOME A MEMBER</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 02: WHY BECOME A MEMBER (4 Feature Cards - Even number: 4!)
+         Images: 30 (Potato aggregation stockpile), 52 (Compost drip application), 55 (Sapling transplanting), 50 (Toor dal intercropping)
+         ====================================================================== -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">MEMBER BENEFITS</div>
+          <h2>WHY OVER 12,000 FARMERS HAVE JOINED OUR COLLECTIVE</h2>
+          <p>Collective participation shields smallholder farmers from predatory middlemen while unlocking economies of scale across every stage of cultivation.</p>
+        </div>
+
+        <div class="grid-4">
+          <!-- Card 1: Aggregation Power -->
+          <div class="feature-box reveal-item">
+            <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 18px; aspect-ratio: 16/11;">
+              <img src="images/image-30.png" alt="Large bulk stockpile of freshly unearthed golden potatoes at aggregation yard" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3>1. Collective Aggregation</h3>
+            <p>Pool your harvest with fellow cluster members to command truckload institutional rates, avoiding distressed roadside liquidation.</p>
+          </div>
+
+          <!-- Card 2: Organic Inputs -->
+          <div class="feature-box reveal-item">
+            <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 18px; aspect-ratio: 16/11;">
+              <img src="images/image-52.png" alt="Farmer applying organic compost in drip-irrigated field" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3>2. Subsidized Bio-Inputs</h3>
+            <p>Access certified non-GMO seeds, vermicompost, bio-pesticides, and drip fittings at bulk cooperative wholesale rates.</p>
+          </div>
+
+          <!-- Card 3: Nursery Support -->
+          <div class="feature-box reveal-item">
+            <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 18px; aspect-ratio: 16/11;">
+              <img src="images/image-55.png" alt="Three rural women farmers transplanting vegetable saplings into waterlogged furrowed beds" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3>3. Nursery & Planting Support</h3>
+            <p>Centralized shade-net nurseries provide healthy, disease-free seedlings at optimal vigor, boosting initial survival rates.</p>
+          </div>
+
+          <!-- Card 4: Intercropping Advisory -->
+          <div class="feature-box reveal-item">
+            <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 18px; aspect-ratio: 16/11;">
+              <img src="images/image-50.png" alt="Woman farmer inspecting healthy mature pigeon pea toor dal pods in field" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3>4. Intercropping & Soil Health</h3>
+            <p>Field agronomists guide nitrogen-fixing pulse intercropping, soil testing, and water harvesting to ensure long-term plot fertility.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 03: MEMBERSHIP ELIGIBILITY (Informative Split)
+         ====================================================================== -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="editorial-split">
+          <div class="split-content reveal-item">
+            <div class="eyebrow">WHO CAN JOIN</div>
+            <h2>MEMBERSHIP ELIGIBILITY, SHARE OWNERSHIP & VOTING RIGHTS</h2>
+            <p>FARMVEST operates under the Companies Act as a Producer Company. Membership is open to all practicing agricultural producers residing within our operational districts.</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 14px; margin: 18px 0 24px;">
+              <div class="service-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Primary Producer Status:</strong> Must own or lease agricultural land and be actively engaged in cultivation.</div>
+              </div>
+              <div class="service-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Nominal Equity Share:</strong> Purchase of minimum 10 equity shares (nominal face value ₹100 each).</div>
+              </div>
+              <div class="service-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Documentation Required:</strong> Copy of land record (7/12 extract / Patta), Aadhaar card, and active bank passbook.</div>
+              </div>
+              <div class="service-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Democratic Rights:</strong> One Member, One Vote principle regardless of total acreage owned.</div>
+              </div>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--muted-text); font-style: italic;">*Note: Detailed documentation and share allocation are finalized in accordance with the registered Articles of Association of the FPC.</p>
+          </div>
+
+          <!-- Highlight Card -->
+          <div class="feature-box reveal-item" style="background: var(--surface-white); border-color: var(--leaf-green); padding: 36px 30px;">
+            <div class="eyebrow" style="margin-bottom: 12px;">COOPERATIVE TRANSPARENCY</div>
+            <h3>Dignity, Equity & Direct Settlement</h3>
+            <p>Unlike conventional middleman trade where weights are manipulated and payments delayed for months, FARMVEST members receive digital weight verification and direct account transfers within 48 hours of mandi delivery.</p>
+            <div style="border-top: 1px solid var(--border-light); margin-top: 20px; padding-top: 20px;">
+              <button class="btn btn-primary" data-open-modal="membershipEnquiryModal" style="width: 100%;">
+                <span>BECOME A MEMBER</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 04: MEMBERSHIP JOURNEY (5-Step Horizontal Infographic Pathway)
+         ====================================================================== -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">HOW TO JOIN</div>
+          <h2>HOW TO BECOME A MEMBER IN 5 SIMPLE STEPS</h2>
+          <p>A simple, transparent onboarding pathway designed to welcome marginal and smallholder cultivators into our collective.</p>
+        </div>
+
+        <div class="membership-journey-wrapper reveal-item">
+          <!-- Continuous Horizontal Connecting Rail -->
+          <div class="journey-rail-track" aria-hidden="true"></div>
+
+          <!-- 5 Symmetrical Milestones (Zero Card Boxes) -->
+          <div class="journey-steps-grid">
+
+            <!-- Step 1 -->
+            <div class="journey-step-col">
+              <div class="journey-node-circle">01</div>
+              <span class="journey-stage-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                <span>STAGE 01 &bull; INITIATION</span>
+              </span>
+              <h3 class="journey-step-title">Submit Interest</h3>
+              <p class="journey-step-desc">Fill out the online enquiry form or visit your nearest village aggregation center coordinator.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="journey-step-col">
+              <div class="journey-node-circle">02</div>
+              <span class="journey-stage-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span>STAGE 02 &bull; PROFILING</span>
+              </span>
+              <h3 class="journey-step-title">Share Basic Details</h3>
+              <p class="journey-step-desc">Provide village location, primary crops grown, landholding acreage, and seasonal harvest timeline.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="journey-step-col">
+              <div class="journey-node-circle">03</div>
+              <span class="journey-stage-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                <span>STAGE 03 &bull; KYC CHECK</span>
+              </span>
+              <h3 class="journey-step-title">Document Verification</h3>
+              <p class="journey-step-desc">Cluster coordinator assists in verifying identity, land patta records, and bank account details.</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="journey-step-col">
+              <div class="journey-node-circle">04</div>
+              <span class="journey-stage-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                <span>STAGE 04 &bull; FIG MEETING</span>
+              </span>
+              <h3 class="journey-step-title">Membership Discussion</h3>
+              <p class="journey-step-desc">Attend a local village FIG meeting to understand bylaws, input subsidies, and procurement protocols.</p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="journey-step-col">
+              <div class="journey-node-circle">05</div>
+              <span class="journey-stage-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                <span>STAGE 05 &bull; ENROLLMENT</span>
+              </span>
+              <h3 class="journey-step-title">Share Confirmation</h3>
+              <p class="journey-step-desc">Receipt of formal FPC share certificate and immediate enrollment in all member benefits.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 05: MEMBER COMMUNITY STORIES (3D Fanned Card Deck Carousel)
+         Images: 23 (Senior sorghum farmer), 26 (Woman with okra basket), 41 (Papaya farmer), 36 (Pomegranate inspection)
+         Matches user design: 3D stacked card deck with circular nav buttons (< & >)
+         ====================================================================== -->
+    <section class="section bg-light" id="memberStoriesSection">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">FARMER EXPERIENCES</div>
+          <h2>HEAR FROM REAL FARMERS WHO TRANSFORMED THEIR INCOMES</h2>
+          <p>Real experiences from cultivators who transformed their agricultural economics through collective participation.</p>
+        </div>
+
+        <!-- 3D Fanned Card Deck Stories Carousel -->
+        <div class="stories-stack-viewport reveal-item" id="memberStoriesStack">
+          <!-- Circular Prev Button (<) -->
+          <button class="stories-nav-btn prev-btn js-stories-prev" aria-label="Previous Story">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- 3D Stack Stage -->
+          <div class="stories-stack-stage" id="storiesStackStage">
+            
+            <!-- Card 1: Hanumanthappa K. -->
+            <div class="stories-stack-card card-slot-0 active" data-index="0" role="group" aria-label="Story 1 of 4: Hanumanthappa K.">
+              <div class="story-card-inner">
+                <img src="images/image-23.png" alt="Senior farmer in Gandhi cap inspecting ripe sorghum jowar head in sunny field" loading="lazy" class="story-card-img">
+                <div class="story-card-overlay"></div>
+                
+                <!-- Top Badges -->
+                <div class="story-card-top">
+                  <span class="story-badge-cluster">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Dharwad Cluster</span>
+                  </span>
+                  <span class="story-badge-verified">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>Verified Cultivator</span>
+                  </span>
+                </div>
+
+                <!-- Bottom Farmer Info & Testimonial -->
+                <div class="story-card-body">
+                  <span class="story-farmer-role">Dryland Sorghum &amp; Millet Grower</span>
+                  <h3 class="story-farmer-name">Hanumanthappa K.</h3>
+                  <p class="story-farmer-quote">&ldquo;Earlier, local traders discounted my jowar by claiming high moisture. With FARMVEST's digital testing, I received the true market grade and 22% higher returns.&rdquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Savita Devi -->
+            <div class="stories-stack-card card-slot-1" data-index="1" role="group" aria-label="Story 2 of 4: Savita Devi">
+              <div class="story-card-inner">
+                <img src="images/image-26.png" alt="Smiling female farmer in yellow sari holding basket of green okra" loading="lazy" class="story-card-img">
+                <div class="story-card-overlay"></div>
+                
+                <div class="story-card-top">
+                  <span class="story-badge-cluster">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Solapur Cluster</span>
+                  </span>
+                  <span class="story-badge-verified">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>Verified Cultivator</span>
+                  </span>
+                </div>
+
+                <div class="story-card-body">
+                  <span class="story-farmer-role">Horticulture &amp; Vegetable Leader</span>
+                  <h3 class="story-farmer-name">Savita Devi</h3>
+                  <p class="story-farmer-quote">&ldquo;Leading our village women's group to grow pesticide-free okra opened direct retail markets in Pune. Our daily picking is crated and paid transparently.&rdquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Narasimha Reddy -->
+            <div class="stories-stack-card card-slot-2" data-index="2" role="group" aria-label="Story 3 of 4: Narasimha Reddy">
+              <div class="story-card-inner">
+                <img src="images/image-41.png" alt="Smiling senior farmer in white dhoti holding basin of ripe papayas in orchard" loading="lazy" class="story-card-img">
+                <div class="story-card-overlay"></div>
+                
+                <div class="story-card-top">
+                  <span class="story-badge-cluster">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Chittoor Cluster</span>
+                  </span>
+                  <span class="story-badge-verified">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>Verified Cultivator</span>
+                  </span>
+                </div>
+
+                <div class="story-card-body">
+                  <span class="story-farmer-role">Fruit Orchard Cultivator</span>
+                  <h3 class="story-farmer-name">Narasimha Reddy</h3>
+                  <p class="story-farmer-quote">&ldquo;Transitioning my 3 acres to Red Lady papaya with drip advisory provided steady weekly income. FARMVEST's collection truck picks fruits right from my orchard gate.&rdquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Basavaraj Patil -->
+            <div class="stories-stack-card card-slot-3" data-index="3" role="group" aria-label="Story 4 of 4: Basavaraj Patil">
+              <div class="story-card-inner">
+                <img src="images/image-36.png" alt="Horticulturist inspecting glowing ruby-red pomegranates on tree in orchard" loading="lazy" class="story-card-img">
+                <div class="story-card-overlay"></div>
+                
+                <div class="story-card-top">
+                  <span class="story-badge-cluster">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Bagalkot Cluster</span>
+                  </span>
+                  <span class="story-badge-verified">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>Verified Cultivator</span>
+                  </span>
+                </div>
+
+                <div class="story-card-body">
+                  <span class="story-farmer-role">Pomegranate Specialist</span>
+                  <h3 class="story-farmer-name">Basavaraj Patil</h3>
+                  <p class="story-farmer-quote">&ldquo;The export packaging and pre-cooling support from our FPC allowed my pomegranate crop to reach premium institutional buyers with near-zero post-harvest losses.&rdquo;</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Circular Next Button (>) -->
+          <button class="stories-nav-btn next-btn js-stories-next" aria-label="Next Story">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Indicator Dots -->
+        <div class="stories-stack-indicators" id="storiesStackDots" role="tablist" aria-label="Member Stories Navigation">
+          <button class="stories-indicator-dot active" data-index="0" role="tab" aria-selected="true" aria-label="Story 1 of 4"></button>
+          <button class="stories-indicator-dot" data-index="1" role="tab" aria-selected="false" aria-label="Story 2 of 4"></button>
+          <button class="stories-indicator-dot" data-index="2" role="tab" aria-selected="false" aria-label="Story 3 of 4"></button>
+          <button class="stories-indicator-dot" data-index="3" role="tab" aria-selected="false" aria-label="Story 4 of 4"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 06: MEMBERSHIP ENQUIRY CTA
+         Image: image-9.png (6 women farmers holding harvested seed bundles)
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal-item">
+          <div class="cta-banner-bg">
+            <img src="images/image-9.png" alt="Group of rural women farmers standing proudly holding harvested crop bundles" loading="lazy">
+          </div>
+          <div class="cta-banner-content">
+            <div class="eyebrow" style="background: rgba(255,255,255,0.18); color: #8ED199;">
+              BECOME A MEMBER TODAY
+            </div>
+            <h2>READY TO SECURE BETTER INCOMES FOR YOUR FARMING FAMILY?</h2>
+            <p>Join hands with thousands of fellow producers. Experience the dignity of transparent weighment, guaranteed market access, and democratic agricultural enterprise.</p>
+            <div class="btn-group">
+              <button class="btn btn-white" data-open-modal="membershipEnquiryModal">
+                <span>BECOME A MEMBER</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <a href="farmers.html" class="btn btn-secondary">
+                <span>MEET OUR FARMER CLUSTERS</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">FARMVEST</span>
+              <span class="brand-subtitle" style="color: #8ED199;">FARMER PRODUCER COMPANY</span>
+            </div>
+          </div>
+          <p>Connecting dedicated farming communities with quality agricultural products, reliable market opportunities, and meaningful business partnerships across India.</p>
+          <!-- Social Media Links -->
+          <div class="footer-social-links" aria-label="Social Media Channels">
+            <a href="https://facebook.com" class="footer-social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://x.com" class="footer-social-icon" aria-label="X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="footer-social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="footer-social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="footer-social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home (Discovery)</a>
+            <a href="home-2.html" class="footer-link">Home 2 (Stories)</a>
+            <a href="about.html" class="footer-link">About FARMVEST</a>
+            <a href="services.html" class="footer-link">Agricultural Services</a>
+            <a href="products.html" class="footer-link">Wholesale Catalogue</a>
+            <a href="farmers.html" class="footer-link">Our Farmers</a>
+            <a href="membership.html" class="footer-link">Farmer Membership</a>
+            <a href="contact.html" class="footer-link">Contact & Hubs</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Commodities</h4>
+          <div class="footer-links">
+            <a href="products.html?category=vegetables" class="footer-link">Fresh Vegetables</a>
+            <a href="products.html?category=fruits" class="footer-link">Fresh Fruits</a>
+            <a href="products.html?category=rice" class="footer-link">Rice & Grains</a>
+            <a href="products.html?category=millets" class="footer-link">Millets & Superfoods</a>
+            <a href="products.html?category=pulses" class="footer-link">Pulses & Lentils</a>
+            <a href="products.html?category=spices" class="footer-link">Spices & Plantation</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Business & FPC</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link" data-open-modal="bulkEnquiryModal">Bulk Wholesale RFQ</a>
+            <a href="#" class="footer-link" data-open-modal="membershipEnquiryModal">Farmer Membership</a>
+            <a href="services.html" class="footer-link">Produce Procurement</a>
+            <a href="services.html" class="footer-link">Grading & Packaging</a>
+            <a href="contact.html" class="footer-link">Institutional Buyers</a>
+            <a href="about.html" class="footer-link">FPC Governance</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Company Office</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>FARMVEST Producer Company Ltd.<br>APMC Market Complex, Pune - Bangalore Agri Corridor, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 (0) 80 2345 6789 / 9876</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>procurement@farmvest-fpc.demo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 FARMVEST Farmer Producer Company Limited. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="about.html" style="color: rgba(255,255,255,0.6);">Privacy Policy</a>
+          <a href="about.html" style="color: rgba(255,255,255,0.6);">Terms of Trade</a>
+          <a href="contact.html" style="color: rgba(255,255,255,0.6);">Procurement Bylaws</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reusable Modals -->
+  <div class="modal-overlay" id="bulkEnquiryModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow" style="font-size: 0.75rem; margin-bottom: 6px;">WHOLESALE PURCHASE RFQ</span>
+          <h3>Submit Bulk Product Enquiry</h3>
+        </div>
+        <button class="modal-close-btn js-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <form class="js-validated-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name <span class="required">*</span></label>
+            <input type="text" name="name" class="form-input" placeholder="e.g. Rajesh Sharma" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Business / Company Name <span class="required">*</span></label>
+            <input type="text" name="company" class="form-input" placeholder="e.g. Apex Food Processing Ltd." required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="required">*</span></label>
+            <input type="tel" name="phone" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address <span class="required">*</span></label>
+            <input type="email" name="email" class="form-input" placeholder="procurement@company.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Product Interested In <span class="required">*</span></label>
+            <input type="text" name="product" class="form-input" placeholder="e.g. Farm Fresh Tomatoes" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Required Quantity (kg / Tons) <span class="required">*</span></label>
+            <input type="text" name="quantity" class="form-input" placeholder="e.g. 5 Metric Tons" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Delivery Location / Mandi Destination <span class="required">*</span></label>
+          <input type="text" name="location" class="form-input" placeholder="City, State, Warehouse PIN code" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Additional Message / Quality Specifications</label>
+          <textarea name="message" class="form-textarea" rows="3" placeholder="Specify grading size, packaging preferences (crates/bags), delivery schedule, or recurring purchase needs..."></textarea>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 24px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 340px; justify-content: center;">
+            <span>SUBMIT BULK ENQUIRY</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="modal-success-state">
+        <div class="modal-success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Enquiry Submitted Successfully!</h3>
+        <p style="margin: 12px 0 20px;">Thank you for your bulk enquiry. Our commercial procurement team will review your requirements and respond within 24 business hours.</p>
+        <button type="button" class="btn btn-primary js-modal-close">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="membershipEnquiryModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow" style="font-size: 0.75rem; margin-bottom: 6px;">GROW WITH OUR COOPERATIVE</span>
+          <h3>Farmer Membership Application</h3>
+        </div>
+        <button class="modal-close-btn js-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <form class="js-validated-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Farmer Full Name <span class="required">*</span></label>
+            <input type="text" name="farmer_name" class="form-input" placeholder="e.g. Ramesh Patil" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="required">*</span></label>
+            <input type="tel" name="phone" class="form-input" placeholder="+91 98765 00000" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Village / Gram Panchayat <span class="required">*</span></label>
+            <input type="text" name="village" class="form-input" placeholder="e.g. Shivajinagar" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">District & State <span class="required">*</span></label>
+            <input type="text" name="district" class="form-input" placeholder="e.g. Belagavi, Karnataka" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Main Crops / Agricultural Produce <span class="required">*</span></label>
+            <input type="text" name="crops" class="form-input" placeholder="e.g. Paddy, Tomatoes, Ragi" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Total Land Holding (Acres) <span class="required">*</span></label>
+            <input type="text" name="land" class="form-input" placeholder="e.g. 3.5 Acres" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Additional Message / Inquiries</label>
+          <textarea name="message" class="form-textarea" rows="3" placeholder="Tell us about your current farming practices, irrigation sources, or specific support you need..."></textarea>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 24px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 340px; justify-content: center;">
+            <span>APPLY FOR MEMBERSHIP</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="modal-success-state">
+        <div class="modal-success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Application Received!</h3>
+        <p style="margin: 12px 0 20px;">Welcome! Our village cluster coordinator will reach out to schedule an in-person field visit and discuss your membership share allocation.</p>
+        <button type="button" class="btn btn-primary js-modal-close">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

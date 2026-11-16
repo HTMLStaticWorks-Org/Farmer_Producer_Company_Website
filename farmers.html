@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Farmers & Producer Groups — FARMVEST Farmer Producer Company</title>
+  <meta name="description" content="Meet the farming collectives, women self-help groups, and regional crop producer clusters that form the backbone of FARMVEST Farmer Producer Company.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="FARMVEST Home">
+        <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">FARMVEST</span>
+          <span class="brand-subtitle">FARMER PRODUCER COMPANY</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="farmers.html" class="nav-link active">Our Farmers</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle js-theme-toggle" aria-label="Toggle Bright/Dark Mode">
+          <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- RTL / LTR Direction Toggle Button -->
+        <button class="rtl-toggle js-rtl-toggle" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Text Direction">
+          <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 8h16M15 4l5 4-5 4"/>
+            <path d="M20 16H4M9 12l-5 4 5 4"/>
+          </svg>
+        </button>
+        <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+          <span>BULK ENQUIRY</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <button class="hamburger-btn js-hamburger-btn" aria-label="Open Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="FARMVEST Home">
+        <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">FARMVEST</span>
+          <span class="brand-subtitle">FARMER PRODUCER COMPANY</span>
+        </div>
+      </a>
+      <button class="drawer-close-btn js-drawer-close" aria-label="Close Navigation Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <!-- 1. All Navlinks Text in Center Alignment -->
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="home-2.html" class="mobile-nav-link">Home 2</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="products.html" class="mobile-nav-link">Products</a>
+      <a href="farmers.html" class="mobile-nav-link active">Our Farmers</a>
+      <a href="membership.html" class="mobile-nav-link">Membership</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- 2. Theme and RTL Icons in Center Alignment -->
+    <div class="mobile-drawer-tools">
+      <!-- Bright / Dark Mode Switcher Icon -->
+      <button class="theme-toggle js-theme-toggle" aria-label="Toggle Bright/Dark Mode" title="Toggle Bright/Dark Mode">
+        <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- RTL / LTR Direction Toggle Icon -->
+      <button class="rtl-toggle js-rtl-toggle" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Text Direction">
+        <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8h16M15 4l5 4-5 4"/>
+          <path d="M20 16H4M9 12l-5 4 5 4"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- 3. Last: CTA Button in Center Alignment Orderly -->
+    <div class="mobile-drawer-cta">
+      <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+        <span>BULK ENQUIRY</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- Hero Banner (Image: 67 - Agronomist with tablet conducting field advisory) -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img src="images/image-67.png" alt="Agronomist with tablet and flipchart providing modern crop advisory to farmers in open field" loading="eager">
+      </div>
+      <div class="container page-hero-content">
+        <div class="eyebrow" style="background: rgba(255,255,255,0.18); color: #8ED199;">
+          OUR GRASSROOTS PRODUCERS
+        </div>
+        <h1>THE HANDS THAT FEED THE NATION.</h1>
+        <p>Explore our village-level Farmer Interest Groups (FIGs) and regional crop producer clusters. Learn how organized smallholders cultivate heritage grains, nutri-cereals, and commercial horticulture under collective technical advisory.</p>
+      </div>
+    </section>
+
+    <!-- SECTION: 8 Producer Clusters (Strictly Even Number: Exactly 8 Cards!)
+         Images: 107 (Foxtail millet), 108 (Bajra), 109 (Barnyard millet), 110 (Kodo millet), 103 (Parboiled rice), 47 (Basmati texture), 116 (Mustard seeds), 28 (Cauliflower field) -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">SPECIALIZED FARMING REGIONS</div>
+          <h2>8 SPECIALIZED REGIONAL CROP CLUSTERS ACROSS INDIA</h2>
+          <p>Organized across distinct agro-climatic zones, each cluster specializes in crops suited to local rainfall, soil health, and traditional agronomic wisdom.</p>
+        </div>
+
+        <div class="grid-8">
+          <!-- Cluster 1: Foxtail Millet -->
+          <div class="feature-box reveal-item">
+            <div class="cluster-thumb-box">
+              <img src="images/image-107.png" alt="Round golden yellow foxtail millet grains in turned wooden bowl" loading="lazy">
+            </div>
+            <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Dryland Cluster</span>
+            <h3>Foxtail Millet (Kangni)</h3>
+            <p>Aggregated from 1,400+ rainfed farmers in Bellary and Anantapur belts. High in calcium, low glycemic index, and chemical-free.</p>
+          </div>
+
+          <!-- Cluster 2: Pearl Millet (Bajra) -->
+          <div class="feature-box reveal-item">
+            <div class="cluster-thumb-box">
+              <img src="images/image-108.png" alt="Grey greenish pearl millet bajra oval seeds in clear glass bowl" loading="lazy">
+            </div>
+            <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Coarse Grains</span>
+            <h3>Pearl Millet (Bajra)</h3>
+            <p>Cultivated by 2,200 smallholders across Marathwada and Northern Karnataka. Drought-resilient grain with rich iron content.</p>
+          </div>
+
+          <!-- Cluster 3: Barnyard Millet -->
+          <div class="feature-box reveal-item">
+            <div class="cluster-thumb-box">
+              <img src="images/image-109.png" alt="Tiny cream white barnyard millet grains in terracotta bowl" loading="lazy">
+            </div>
+            <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Dietary Grains</span>
+            <h3>Barnyard Millet (Sanwa)</h3>
+            <p>Grown by hilly tribal farming families. Exceptionally light, fast-digesting ancient grain ideal for dietary flour blends.</p>
+          </div>
+
+          <!-- Cluster 4: Kodo & Little Millet -->
+          <div class="feature-box reveal-item">
+            <div class="cluster-thumb-box">
+              <img src="images/image-110.png" alt="Golden brown kodo millet seeds in rustic turned wooden bowl" loading="lazy">
+            </div>
+            <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Indigenous Nutri-Cereals</span>
+            <h3>Kodo & Little Millet</h3>
+            <p>Sourced from traditional dryland collectives in Madhya Pradesh. Natural pest resistance requiring zero synthetic sprays.</p>
+          </div>
+
+          <!-- Cluster 5: Parboiled Staple Rice -->
+          <div class="feature-box reveal-item">
+            <div class="cluster-thumb-box">
+              <img src="images/image-103.png" alt="Top-down view of parboiled white rice in round wooden bowl" loading="lazy">
+            </div>
+            <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Staple Grains</span>
+            <h3>Parboiled Rice Cluster</h3>
+            <p>Aggregated from Krishna-Godavari wetland producers. Parboiled in modern cooperative facilities to lock in vitamins.</p>
+          </div>
+
+          <!-- Cluster 6: Basmati Rice Milling -->
+          <div class="feature-box reveal-item">
+            <div class="cluster-thumb-box">
+              <img src="images/image-47.png" alt="Macro texture shot of premium long-grain white Basmati rice" loading="lazy" class="img-cover">
+            </div>
+            <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Aromatic Rice</span>
+            <h3>Basmati Milling Cluster</h3>
+            <p>Specialized northern producer groups producing Traditional and 1121 Basmati with authentic geographical origin tracking.</p>
+          </div>
+
+          <!-- Cluster 7: Mustard & Oilseeds -->
+          <div class="feature-box reveal-item">
+            <div class="cluster-thumb-box">
+              <img src="images/image-116.png" alt="Wooden bowl filled to the brim with round golden yellow mustard seeds" loading="lazy">
+            </div>
+            <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Oilseeds & Spices</span>
+            <h3>Mustard & Oilseeds Cluster</h3>
+            <p>High-oil-content yellow and black mustard seed lots aggregated for cold-pressed kachi ghani oil millers across India.</p>
+          </div>
+
+          <!-- Cluster 8: Commercial Cauliflower & Brassicas -->
+          <div class="feature-box reveal-item">
+            <div class="cluster-thumb-box">
+              <img src="images/image-28.png" alt="Uniform commercial rows of dense white cauliflower heads in field" loading="lazy" class="img-cover">
+            </div>
+            <span class="badge-soft" style="margin-bottom: 8px; width: fit-content;">Commercial Horticulture</span>
+            <h3>Brassica Horticulture Cluster</h3>
+            <p>Intensive vegetable growing belts producing snow-white cauliflower, cabbage, and broccoli with synchronized daily harvests.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Women in Agriculture (2 Stories - Strictly Even: 2!)
+         Images: 32 (Chilli harvest) & 38 (Guava harvest) -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">FARMER LEADERSHIP IN ACTION</div>
+          <h2>HOW WOMEN FARMERS AND LOCAL DIRECTORS DRIVE OUR SUCCESS</h2>
+          <p>Highlighting dedicated women cultivators who spearhead micro-enterprises, seed preservation, and organic vegetable clusters.</p>
+        </div>
+
+        <div class="leadership-showcase-wrapper reveal-item">
+          <!-- Profile Switcher Tabs -->
+          <div class="leadership-tabs-nav" id="leadershipTabsNav" role="tablist" aria-label="Women Producer Leaders">
+            <button class="leader-tab-btn active" data-index="0" role="tab" aria-selected="true" aria-label="View Parvati Bai profile">
+              <span class="leader-tab-dot"></span>
+              <span>Parvati Bai</span>
+              <span class="leader-tab-role">Guntur Chilli Group</span>
+            </button>
+            <button class="leader-tab-btn" data-index="1" role="tab" aria-selected="false" aria-label="View Lalitha Kumari profile">
+              <span class="leader-tab-dot"></span>
+              <span>Lalitha Kumari</span>
+              <span class="leader-tab-role">Karnataka Guava Cluster</span>
+            </button>
+          </div>
+
+          <!-- Prev / Next Navigation Buttons -->
+          <button class="stage-arrow-btn prev-btn js-leader-stage-prev" aria-label="Previous producer story">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="stage-arrow-btn next-btn js-leader-stage-next" aria-label="Next producer story">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+
+          <!-- Unified Stage Viewport & Track -->
+          <div class="leadership-stage-viewport">
+            <div class="leadership-stage-track" id="leadershipStageTrack">
+
+              <!-- Slide 1: Parvati Bai -->
+              <div class="leadership-slide" role="tabpanel">
+                <div class="leader-visual-frame">
+                  <img src="images/image-32.png" alt="Indian woman farmer in floral headscarf harvesting green chillies into tub in field" loading="lazy">
+                  <div class="leader-frame-overlay"></div>
+                  <span class="leader-tag-pill">
+                    <span class="leader-tag-dot"></span>
+                    SPICE COLLECTIVE
+                  </span>
+                  <div class="leader-status-chip">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>Lead Cultivator</span>
+                  </div>
+                </div>
+
+                <div class="leader-content-pane">
+                  <div class="leader-eyebrow-row">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>PRODUCER LEADERSHIP SPOTLIGHT</span>
+                  </div>
+
+                  <div>
+                    <h3 class="leader-heading">Parvati Bai</h3>
+                    <span class="leader-region">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Guntur Chilli Producer Group &bull; Andhra Pradesh
+                    </span>
+                  </div>
+
+                  <div class="leader-quote-box">
+                    <svg class="leader-quote-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p class="leader-quote-text">"Our 25-woman producer group shifted from selling loose chillies in local markets to delivering standardized APEDA-packed consignments to FARMVEST. We doubled our net household savings in two seasons."</p>
+                  </div>
+
+                  <div class="leader-metrics-grid">
+                    <div class="leader-metric-chip">
+                      <span class="leader-metric-dot"></span>
+                      <span><strong>25-Woman</strong> Collective</span>
+                    </div>
+                    <div class="leader-metric-chip">
+                      <span class="leader-metric-dot"></span>
+                      <span><strong>2x Net</strong> Household Savings</span>
+                    </div>
+                  </div>
+
+                  <div class="leader-action-bar">
+                    <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Guntur Green Chillies">
+                      <span>Request Quote for Guntur Chillies</span>
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                    <div class="leader-verify-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>APEDA Export Grade</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Lalitha Kumari -->
+              <div class="leadership-slide" role="tabpanel">
+                <div class="leader-visual-frame">
+                  <img src="images/image-38.png" alt="Female farmer in yellow sari kneeling beside young guava tree holding green fruit" loading="lazy">
+                  <div class="leader-frame-overlay"></div>
+                  <span class="leader-tag-pill">
+                    <span class="leader-tag-dot"></span>
+                    ORCHARD SPECIALIST
+                  </span>
+                  <div class="leader-status-chip">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>Orchard Lead</span>
+                  </div>
+                </div>
+
+                <div class="leader-content-pane">
+                  <div class="leader-eyebrow-row">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>PRODUCER LEADERSHIP SPOTLIGHT</span>
+                  </div>
+
+                  <div>
+                    <h3 class="leader-heading">Lalitha Kumari</h3>
+                    <span class="leader-region">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Karnataka Guava Cluster &bull; Dharwad Region
+                    </span>
+                  </div>
+
+                  <div class="leader-quote-box">
+                    <svg class="leader-quote-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p class="leader-quote-text">"Adopting micro-irrigation and organic bio-fertilizers helped my Taiwan Pink guava orchard achieve year-round fruit set. Through our cooperative, fruits are weighed digitally and paid without delay."</p>
+                  </div>
+
+                  <div class="leader-metrics-grid">
+                    <div class="leader-metric-chip">
+                      <span class="leader-metric-dot"></span>
+                      <span><strong>Micro-Irrigation</strong> Fitted</span>
+                    </div>
+                    <div class="leader-metric-chip">
+                      <span class="leader-metric-dot"></span>
+                      <span><strong>Digital Tare</strong> Weighing</span>
+                    </div>
+                  </div>
+
+                  <div class="leader-action-bar">
+                    <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Taiwan Pink Guava">
+                      <span>Request Quote for Fresh Guavas</span>
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                    <div class="leader-verify-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>GAP Certified Orchard</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Pagination Dots -->
+          <div class="leadership-stage-dots" id="leadershipStageDots" role="tablist" aria-label="Producer Leadership Slides">
+            <button class="stage-dot active" data-index="0" aria-label="Slide 1: Parvati Bai"></button>
+            <button class="stage-dot" data-index="1" aria-label="Slide 2: Lalitha Kumari"></button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Farmer Join CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal-item">
+          <div class="cta-banner-content">
+            <div class="eyebrow" style="background: rgba(255,255,255,0.18); color: #8ED199;">
+              JOIN A LOCAL PRODUCER GROUP
+            </div>
+            <h2>ARE YOU A FARMER? JOIN YOUR NEAREST VILLAGE CLUSTER TODAY</h2>
+            <p>Connect with your local village cluster coordinator today. Access high-quality seeds, digital weighing security, and long-term bulk wholesale supply linkages.</p>
+            <div class="btn-group">
+              <button class="btn btn-white" data-open-modal="membershipEnquiryModal">
+                <span>BECOME A MEMBER</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <a href="contact.html" class="btn btn-secondary">
+                <span>TALK TO OUR FARMER DESK</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">FARMVEST</span>
+              <span class="brand-subtitle" style="color: #8ED199;">FARMER PRODUCER COMPANY</span>
+            </div>
+          </div>
+          <p>Connecting dedicated farming communities with quality agricultural products, reliable market opportunities, and meaningful business partnerships across India.</p>
+          <!-- Social Media Links -->
+          <div class="footer-social-links" aria-label="Social Media Channels">
+            <a href="https://facebook.com" class="footer-social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://x.com" class="footer-social-icon" aria-label="X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="footer-social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="footer-social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="footer-social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home (Discovery)</a>
+            <a href="home-2.html" class="footer-link">Home 2 (Stories)</a>
+            <a href="about.html" class="footer-link">About FARMVEST</a>
+            <a href="services.html" class="footer-link">Agricultural Services</a>
+            <a href="products.html" class="footer-link">Wholesale Catalogue</a>
+            <a href="farmers.html" class="footer-link">Our Farmers</a>
+            <a href="membership.html" class="footer-link">Farmer Membership</a>
+            <a href="contact.html" class="footer-link">Contact & Hubs</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Commodities</h4>
+          <div class="footer-links">
+            <a href="products.html?category=vegetables" class="footer-link">Fresh Vegetables</a>
+            <a href="products.html?category=fruits" class="footer-link">Fresh Fruits</a>
+            <a href="products.html?category=rice" class="footer-link">Rice & Grains</a>
+            <a href="products.html?category=millets" class="footer-link">Millets & Superfoods</a>
+            <a href="products.html?category=pulses" class="footer-link">Pulses & Lentils</a>
+            <a href="products.html?category=spices" class="footer-link">Spices & Plantation</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Business & FPC</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link" data-open-modal="bulkEnquiryModal">Bulk Wholesale RFQ</a>
+            <a href="#" class="footer-link" data-open-modal="membershipEnquiryModal">Farmer Membership</a>
+            <a href="services.html" class="footer-link">Produce Procurement</a>
+            <a href="services.html" class="footer-link">Grading & Packaging</a>
+            <a href="contact.html" class="footer-link">Institutional Buyers</a>
+            <a href="about.html" class="footer-link">FPC Governance</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Company Office</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>FARMVEST Producer Company Ltd.<br>APMC Market Complex, Pune - Bangalore Agri Corridor, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 (0) 80 2345 6789 / 9876</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>procurement@farmvest-fpc.demo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 FARMVEST Farmer Producer Company Limited. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="about.html" style="color: rgba(255,255,255,0.6);">Privacy Policy</a>
+          <a href="about.html" style="color: rgba(255,255,255,0.6);">Terms of Trade</a>
+          <a href="contact.html" style="color: rgba(255,255,255,0.6);">Procurement Bylaws</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reusable Modals -->
+  <div class="modal-overlay" id="bulkEnquiryModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow" style="font-size: 0.75rem; margin-bottom: 6px;">WHOLESALE PURCHASE RFQ</span>
+          <h3>Submit Bulk Product Enquiry</h3>
+        </div>
+        <button class="modal-close-btn js-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <form class="js-validated-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name <span class="required">*</span></label>
+            <input type="text" name="name" class="form-input" placeholder="e.g. Rajesh Sharma" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Business / Company Name <span class="required">*</span></label>
+            <input type="text" name="company" class="form-input" placeholder="e.g. Apex Food Processing Ltd." required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="required">*</span></label>
+            <input type="tel" name="phone" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address <span class="required">*</span></label>
+            <input type="email" name="email" class="form-input" placeholder="procurement@company.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Product Interested In <span class="required">*</span></label>
+            <input type="text" name="product" class="form-input" placeholder="e.g. Foxtail Millet / Mustard Seeds" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Required Quantity (kg / Tons) <span class="required">*</span></label>
+            <input type="text" name="quantity" class="form-input" placeholder="e.g. 5 Metric Tons" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Delivery Location / Mandi Destination <span class="required">*</span></label>
+          <input type="text" name="location" class="form-input" placeholder="City, State, Warehouse PIN code" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Additional Message / Quality Specifications</label>
+          <textarea name="message" class="form-textarea" rows="3" placeholder="Specify grading size, packaging preferences (crates/bags), delivery schedule, or recurring purchase needs..."></textarea>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 24px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 340px; justify-content: center;">
+            <span>SUBMIT BULK ENQUIRY</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="modal-success-state">
+        <div class="modal-success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Enquiry Submitted Successfully!</h3>
+        <p style="margin: 12px 0 20px;">Thank you for your bulk enquiry. Our commercial procurement team will review your requirements and respond within 24 business hours.</p>
+        <button type="button" class="btn btn-primary js-modal-close">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="membershipEnquiryModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow" style="font-size: 0.75rem; margin-bottom: 6px;">GROW WITH OUR COOPERATIVE</span>
+          <h3>Farmer Membership Application</h3>
+        </div>
+        <button class="modal-close-btn js-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <form class="js-validated-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Farmer Full Name <span class="required">*</span></label>
+            <input type="text" name="farmer_name" class="form-input" placeholder="e.g. Ramesh Patil" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="required">*</span></label>
+            <input type="tel" name="phone" class="form-input" placeholder="+91 98765 00000" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Village / Gram Panchayat <span class="required">*</span></label>
+            <input type="text" name="village" class="form-input" placeholder="e.g. Shivajinagar" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">District & State <span class="required">*</span></label>
+            <input type="text" name="district" class="form-input" placeholder="e.g. Belagavi, Karnataka" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Main Crops / Agricultural Produce <span class="required">*</span></label>
+            <input type="text" name="crops" class="form-input" placeholder="e.g. Paddy, Tomatoes, Ragi" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Total Land Holding (Acres) <span class="required">*</span></label>
+            <input type="text" name="land" class="form-input" placeholder="e.g. 3.5 Acres" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Additional Message / Inquiries</label>
+          <textarea name="message" class="form-textarea" rows="3" placeholder="Tell us about your current farming practices, irrigation sources, or specific support you need..."></textarea>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 24px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 340px; justify-content: center;">
+            <span>APPLY FOR MEMBERSHIP</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="modal-success-state">
+        <div class="modal-success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Application Received!</h3>
+        <p style="margin: 12px 0 20px;">Welcome! Our village cluster coordinator will reach out to schedule an in-person field visit and discuss your membership share allocation.</p>
+        <button type="button" class="btn btn-primary js-modal-close">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wholesale Produce Catalogue — FARMVEST Farmer Producer Company</title>
+  <meta name="description" content="Explore FARMVEST's complete wholesale catalogue of fresh vegetables, orchard fruits, indigenous millets, aromatic rice, pulses, and plantation spices sourced directly from Indian member farmers.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="FARMVEST Home">
+        <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">FARMVEST</span>
+          <span class="brand-subtitle">FARMER PRODUCER COMPANY</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="farmers.html" class="nav-link">Our Farmers</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle js-theme-toggle" aria-label="Toggle Bright/Dark Mode">
+          <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- RTL / LTR Direction Toggle Button -->
+        <button class="rtl-toggle js-rtl-toggle" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Text Direction">
+          <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 8h16M15 4l5 4-5 4"/>
+            <path d="M20 16H4M9 12l-5 4 5 4"/>
+          </svg>
+        </button>
+        <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+          <span>BULK ENQUIRY</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <button class="hamburger-btn js-hamburger-btn" aria-label="Open Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="FARMVEST Home">
+        <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">FARMVEST</span>
+          <span class="brand-subtitle">FARMER PRODUCER COMPANY</span>
+        </div>
+      </a>
+      <button class="drawer-close-btn js-drawer-close" aria-label="Close Navigation Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <!-- 1. All Navlinks Text in Center Alignment -->
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="home-2.html" class="mobile-nav-link">Home 2</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="products.html" class="mobile-nav-link active">Products</a>
+      <a href="farmers.html" class="mobile-nav-link">Our Farmers</a>
+      <a href="membership.html" class="mobile-nav-link">Membership</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- 2. Theme and RTL Icons in Center Alignment -->
+    <div class="mobile-drawer-tools">
+      <!-- Bright / Dark Mode Switcher Icon -->
+      <button class="theme-toggle js-theme-toggle" aria-label="Toggle Bright/Dark Mode" title="Toggle Bright/Dark Mode">
+        <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- RTL / LTR Direction Toggle Icon -->
+      <button class="rtl-toggle js-rtl-toggle" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Text Direction">
+        <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8h16M15 4l5 4-5 4"/>
+          <path d="M20 16H4M9 12l-5 4 5 4"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- 3. Last: CTA Button in Center Alignment Orderly -->
+    <div class="mobile-drawer-cta">
+      <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+        <span>BULK ENQUIRY</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         SECTION 01: PRODUCTS HERO
+         Image: image-76.png (Wholesale produce display pyramids)
+         ====================================================================== -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img src="images/image-76.png" alt="Wholesale market stall display of fresh cauliflower, cabbage, and cucumbers" loading="eager">
+      </div>
+      <div class="container page-hero-content">
+        <div class="eyebrow" style="background: rgba(255,255,255,0.18); color: #8ED199;">
+          DIRECT FARM HARVESTS
+        </div>
+        <h1>WHOLESALE AGRICULTURAL PRODUCE CATALOG</h1>
+        <p>Discover a diverse selection of agricultural produce aggregated directly from our member farming network across India. Graded for institutional catering, supermarkets, and processing plants.</p>
+        <div style="margin-top: 24px;">
+          <a href="#product-grid" class="btn btn-primary" style="background-color: #6FA879; color: #103B2B !important;">
+            <span>BROWSE CROP CATEGORIES & HARVESTS</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 02: PRODUCT CATEGORY NAVIGATION (Live Filter Bar)
+         ====================================================================== -->
+    <section class="section bg-light" id="product-grid" style="padding-bottom: 24px;">
+      <div class="container">
+        <div class="section-header reveal-item" style="margin-bottom: 32px;">
+          <div class="eyebrow">FILTER BY PRODUCE CATEGORY</div>
+          <h2>CHOOSE A CATEGORY TO VIEW AVAILABLE BULK CROPS</h2>
+          <p>Filter by agricultural commodity category to view specifications, available bulk packing, and submit instant RFQ orders.</p>
+        </div>
+
+        <!-- Filter Buttons (Works client-side without page reload) -->
+        <div class="filter-bar reveal-item">
+          <button class="filter-btn js-filter-btn active" data-filter="all">All Products</button>
+          <button class="filter-btn js-filter-btn" data-filter="vegetables">Fresh Vegetables</button>
+          <button class="filter-btn js-filter-btn" data-filter="fruits">Fresh Fruits</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 03: PRODUCT CATALOGUE (Exactly 12 Items - Even number: 12!)
+         Images: 81, 82, 84, 85, 86, 88 (Vegetables)
+                 90, 91, 92, 93, 94, 95 (Fruits)
+         ====================================================================== -->
+    <section class="section bg-light" style="padding-top: 0;">
+      <div class="container">
+        <div class="grid-12">
+          <!-- 01. Green Okra (Bhindi) -->
+          <div class="product-card reveal-item js-product-card" data-category="vegetables">
+            <div class="product-card-img">
+              <img src="images/image-81.png" alt="Two crisp green okra lady finger pods" loading="lazy">
+              <span class="product-badge">Grade A</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Vegetables</span>
+              <h3>Fresh Green Okra (Bhindi)</h3>
+              <p class="product-desc">Tender, slender green pods harvested at 7-9cm length, string-less and ideal for immediate retail delivery.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">10 kg Ventilated Crates</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Fresh Green Okra (Bhindi)"
+                  data-category-name="Vegetables"
+                  data-image="images/image-81.png"
+                  data-desc="Tender, bright green okra pods selected for high freshness and low fiber. Picked daily in early morning hours."
+                  data-packaging="10 kg Corrugated Crates / Net Bags"
+                  data-moq="250 kg">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Fresh Green Okra (Bhindi)">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02. Fresh Brinjal / Eggplant -->
+          <div class="product-card reveal-item js-product-card" data-category="vegetables">
+            <div class="product-card-img">
+              <img src="images/image-82.png" alt="Glossy deep-purple eggplant with vibrant green calyx" loading="lazy">
+              <span class="product-badge">Direct Farm</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Vegetables</span>
+              <h3>Fresh Brinjal (Eggplant)</h3>
+              <p class="product-desc">Glossy deep-purple round and oval varieties with crisp green calyx and soft seedless flesh.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">20 kg Plastic Crates</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Fresh Brinjal (Eggplant)"
+                  data-category-name="Vegetables"
+                  data-image="images/image-82.png"
+                  data-desc="Firm, high-gloss brinjals sorted by size (small stuffing vs large slicing). Zero insect punctures or scarring."
+                  data-packaging="20 kg Heavy-Duty Crates"
+                  data-moq="500 kg">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Fresh Brinjal (Eggplant)">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03. Farm Fresh Carrots -->
+          <div class="product-card reveal-item js-product-card" data-category="vegetables">
+            <div class="product-card-img">
+              <img src="images/image-84.png" alt="Freshly harvested bunch of bright orange carrots with green tops" loading="lazy">
+              <span class="product-badge">Root Crop</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Vegetables</span>
+              <h3>Farm-Fresh Carrots</h3>
+              <p class="product-desc">Sweet, crunchy orange Kuroda and Ooty carrots, hydro-cooled and cleaned for long freshness retention.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">30 kg Mesh Bags</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Farm-Fresh Carrots"
+                  data-category-name="Vegetables"
+                  data-image="images/image-84.png"
+                  data-desc="Washed and mechanically hydro-cooled orange carrots graded 15-20cm length. High carotene content."
+                  data-packaging="25 kg & 50 kg Ventilated Mesh Sacks"
+                  data-moq="1 Metric Ton">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Farm-Fresh Carrots">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04. Snow-White Cauliflower -->
+          <div class="product-card reveal-item js-product-card" data-category="vegetables">
+            <div class="product-card-img">
+              <img src="images/image-85.png" alt="Pristine white cauliflower head in crisp green outer leaves" loading="lazy">
+              <span class="product-badge">Brassica</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Vegetables</span>
+              <h3>Snow-White Cauliflower</h3>
+              <p class="product-desc">Dense, compact white curds shielded by natural wrapper leaves to prevent discoloration during transport.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">15 kg Wooden Crates</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Snow-White Cauliflower"
+                  data-category-name="Vegetables"
+                  data-image="images/image-85.png"
+                  data-desc="Hand-cut curds with 2 outer protective leaves intact. Weight range 800g to 1.5kg per head."
+                  data-packaging="15 kg Ventilated Crates / Burlap"
+                  data-moq="500 kg">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Snow-White Cauliflower">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05. Solid Green Cabbage -->
+          <div class="product-card reveal-item js-product-card" data-category="vegetables">
+            <div class="product-card-img">
+              <img src="images/image-86.png" alt="Whole solid round green cabbage with natural wrapper leaves" loading="lazy">
+              <span class="product-badge">Staple Bulk</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Vegetables</span>
+              <h3>Solid Green Cabbage</h3>
+              <p class="product-desc">Tightly wrapped spherical green cabbage heads with high moisture, excellent shipping tolerance, and crisp texture.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">40 kg Mesh Sacks</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Solid Green Cabbage"
+                  data-category-name="Vegetables"
+                  data-image="images/image-86.png"
+                  data-desc="Dense heads averaging 1.2kg - 2.0kg. Resistant to split during long-distance road transit."
+                  data-packaging="40 kg Ventilated Mesh Bags"
+                  data-moq="1 Metric Ton">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Solid Green Cabbage">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06. Fresh Salad Cucumbers -->
+          <div class="product-card reveal-item js-product-card" data-category="vegetables">
+            <div class="product-card-img">
+              <img src="images/image-88.png" alt="Fresh crisp dark green salad cucumbers" loading="lazy">
+              <span class="product-badge">Polyhouse Yield</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Vegetables</span>
+              <h3>Fresh Salad Cucumbers</h3>
+              <p class="product-desc">Straight, dark green greenhouse and field-grown cucumbers with thin skin, low bitterness, and small seeds.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">15 kg Corrugated Boxes</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Fresh Salad Cucumbers"
+                  data-category-name="Vegetables"
+                  data-image="images/image-88.png"
+                  data-desc="Seedless English and indigenous slicing varieties harvested at crisp stage for hotels and supermarkets."
+                  data-packaging="15 kg Corrugated Boxes"
+                  data-moq="300 kg">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Fresh Salad Cucumbers">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 07. Premium Pomegranates (Bhagwa) -->
+          <div class="product-card reveal-item js-product-card" data-category="fruits">
+            <div class="product-card-img">
+              <img src="images/image-90.png" alt="Whole and cut red pomegranate revealing deep ruby arils" loading="lazy">
+              <span class="product-badge">Orchard Special</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Fruits</span>
+              <h3>Premium Pomegranates</h3>
+              <p class="product-desc">Bhagwa variety pomegranates with glossy ruby-red arils, high juice percentage, and soft chewable seeds.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">3.5 kg / 5 kg Cartons</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Premium Pomegranates"
+                  data-category-name="Fruits"
+                  data-image="images/image-90.png"
+                  data-desc="Export-graded Bhagwa pomegranates from Solapur and Bagalkot belts. Graded by count (9, 12, 15 pieces per box)."
+                  data-packaging="3.5 kg & 5 kg Export Master Cartons"
+                  data-moq="500 kg">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Premium Pomegranates">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 08. Golden Pineapple -->
+          <div class="product-card reveal-item js-product-card" data-category="fruits">
+            <div class="product-card-img">
+              <img src="images/image-91.png" alt="Ripe whole pineapple with green crown leaves and cut slices" loading="lazy">
+              <span class="product-badge">Tropical</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Fruits</span>
+              <h3>Golden Ripe Pineapple</h3>
+              <p class="product-desc">Kew and Queen variety tropical pineapples with vibrant yellow flesh, high brix sweetness, and aromatic aroma.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">12 kg Master Boxes</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Golden Ripe Pineapple"
+                  data-category-name="Fruits"
+                  data-image="images/image-91.png"
+                  data-desc="Harvested at 25% color break for optimal transit endurance. Sweet, fibrous pulp ideal for juicing."
+                  data-packaging="12 kg Telescopic Cartons"
+                  data-moq="500 kg">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Golden Ripe Pineapple">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 09. Fresh Cavendish Bananas -->
+          <div class="product-card reveal-item js-product-card" data-category="fruits">
+            <div class="product-card-img">
+              <img src="images/image-22.png" alt="Heavy hanging bunches of green Cavendish bananas in plantation grove" loading="lazy">
+              <span class="product-badge">High Volume</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Fruits</span>
+              <h3>Fresh Cavendish Bananas</h3>
+              <p class="product-desc">Grand Nain (G9) bananas hand-harvested at 39-42 caliber, washed in alum baths, and foam-padded in boxes.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">13 kg / 18 kg Boxes</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Fresh Cavendish Bananas"
+                  data-category-name="Fruits"
+                  data-image="images/image-92.png"
+                  data-desc="Export-grade G9 banana hands packed in ethylene-scrubbed vacuum liners. Controlled ripening chamber support."
+                  data-packaging="13 kg Bottom-Lid Export Cartons"
+                  data-moq="1 Metric Ton">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Fresh Cavendish Bananas">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Farm Papaya -->
+          <div class="product-card reveal-item js-product-card" data-category="fruits">
+            <div class="product-card-img">
+              <img src="images/image-93.png" alt="Whole and cut ripe papaya with bright orange flesh" loading="lazy">
+              <span class="product-badge">Nutrient Rich</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Fruits</span>
+              <h3>Taiwan Red Lady Papaya</h3>
+              <p class="product-desc">Naturally grown Red Lady 786 papayas with deep reddish-orange sweet pulp, thick skin, and high papain content.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">10 kg / 15 kg Cartons</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Taiwan Red Lady Papaya"
+                  data-category-name="Fruits"
+                  data-image="images/image-93.png"
+                  data-desc="Weight 1.0kg - 1.8kg per fruit. Foam-sleeve wrapped to cushion against in-transit bruises."
+                  data-packaging="10 kg Corrugated Boxes with Foam Sleeves"
+                  data-moq="500 kg">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Taiwan Red Lady Papaya">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. Farm Fresh Sweet Oranges -->
+          <div class="product-card reveal-item js-product-card" data-category="fruits">
+            <div class="product-card-img">
+              <img src="images/image-94.png" alt="Whole orange, half cross-section and juicy wedge" loading="lazy">
+              <span class="product-badge">Citrus</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Fruits</span>
+              <h3>Sweet Oranges (Mosambi)</h3>
+              <p class="product-desc">Juicy Nagpur and Jalna sweet limes (Mosambi) with thin peels, abundant sweet juice, and low acidity.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">20 kg Wooden Boxes / Crates</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Sweet Oranges (Mosambi)"
+                  data-category-name="Fruits"
+                  data-image="images/image-94.png"
+                  data-desc="Cleaned, sized (65mm-75mm) sweet limes high in Vitamin C. Ideal for commercial juice extraction."
+                  data-packaging="20 kg Plastic Crates / Jute Mesh"
+                  data-moq="1 Metric Ton">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Sweet Oranges (Mosambi)">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12. Green Seedless Table Grapes -->
+          <div class="product-card reveal-item js-product-card" data-category="fruits">
+            <div class="product-card-img">
+              <img src="images/image-95.png" alt="Bunch of fresh green seedless grapes on vine stem" loading="lazy">
+              <span class="product-badge">Export Quality</span>
+            </div>
+            <div class="product-card-body">
+              <span class="product-category-tag">Fruits</span>
+              <h3>Green Seedless Table Grapes</h3>
+              <p class="product-desc">Thompson Seedless and Sonaka grapes from Nashik vineyards, possessing firm berries, high brix, and natural bloom.</p>
+              <div class="product-spec-row">
+                <span class="product-spec-label">Packaging:</span>
+                <span class="product-spec-val">5 kg Export Punnet Boxes</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="btn btn-outline btn-sm js-view-details"
+                  data-name="Green Seedless Table Grapes"
+                  data-category-name="Fruits"
+                  data-image="images/image-95.png"
+                  data-desc="Berry diameter 16mm-18mm+, brix 17%+. Pre-cooled and packed in 500g clear clamshell punnets."
+                  data-packaging="5 kg Master Cartons with 10 x 500g Punnets"
+                  data-moq="500 kg">Quick View</button>
+                <button class="btn btn-primary btn-sm" data-open-modal="bulkEnquiryModal" data-product="Green Seedless Table Grapes">Order Bulk</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 05: BULK ORDER PROCESS (4 Step Cards - Even number: 4!)
+         Images: 24 (Tomatoes in sacks), 33 (Raw green mangoes), 62 (Green chilli weighing), 113 (Ginger roots)
+         ====================================================================== -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">SIMPLE 4-STEP ORDER PROCESS</div>
+          <h2>HOW WHOLESALE PROCUREMENT WORKS WITH FARMVEST</h2>
+          <p>Four streamlined steps to establish reliable, recurring bulk agricultural produce shipments.</p>
+        </div>
+
+        <!-- 3D Coverflow Order Workflow Carousel -->
+        <div class="workflow-coverflow-wrapper reveal-item" id="orderWorkflowCoverflow">
+          <!-- Circular Prev Button (<) -->
+          <button class="workflow-nav-btn prev-btn js-workflow-prev" aria-label="Previous Step">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Circular Next Button (>) -->
+          <button class="workflow-nav-btn next-btn js-workflow-next" aria-label="Next Step">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- 3D Coverflow Stage -->
+          <div class="workflow-coverflow-stage" id="workflowStage">
+            
+            <!-- Step 01 -->
+            <div class="workflow-card active" data-index="0" data-pos="0">
+              <img src="images/image-24.png" alt="Farmers gathering ripe red tomatoes into sacks" loading="lazy" class="workflow-card-img">
+              <div class="workflow-card-overlay"></div>
+              <div class="workflow-card-content">
+                <span class="workflow-step-pill">Step 01</span>
+                <h3 class="workflow-card-title">Explore Products</h3>
+                <p class="workflow-card-desc">Browse our live seasonal catalogue and identify the required commodities, sizing grades, and delivery frequencies.</p>
+              </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="workflow-card" data-index="1" data-pos="1">
+              <img src="images/image-33.png" alt="Flat lay of fresh green raw mangoes piled together" loading="lazy" class="workflow-card-img">
+              <div class="workflow-card-overlay"></div>
+              <div class="workflow-card-content">
+                <span class="workflow-step-pill">Step 02</span>
+                <h3 class="workflow-card-title">Select Requirements</h3>
+                <p class="workflow-card-desc">Specify packaging preferences, minimum batch volume, moisture tolerances, and delivery mandi locations.</p>
+              </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="workflow-card" data-index="2" data-pos="2">
+              <img src="images/image-62.png" alt="Packing and digital weighing of produce into export cartons" loading="lazy" class="workflow-card-img">
+              <div class="workflow-card-overlay"></div>
+              <div class="workflow-card-content">
+                <span class="workflow-step-pill">Step 03</span>
+                <h3 class="workflow-card-title">Submit Bulk RFQ</h3>
+                <p class="workflow-card-desc">Use our online enquiry form to submit your requirements directly to our dedicated commercial sales desk.</p>
+              </div>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="workflow-card" data-index="3" data-pos="-1">
+              <img src="images/image-113.png" alt="Cluster of fresh knobby ginger roots" loading="lazy" class="workflow-card-img">
+              <div class="workflow-card-overlay"></div>
+              <div class="workflow-card-content">
+                <span class="workflow-step-pill">Step 04</span>
+                <h3 class="workflow-card-title">Discuss Supply Details</h3>
+                <p class="workflow-card-desc">Receive formal price quotations, schedule pre-shipment sample reviews, and execute transparent supply contracts.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Pagination Indicator Dots -->
+          <div class="workflow-dots" id="workflowDots" role="tablist" aria-label="Order Workflow Steps Pagination">
+            <button class="workflow-dot active js-workflow-dot" role="tab" aria-selected="true" aria-label="Step 01: Explore Products" data-index="0"></button>
+            <button class="workflow-dot js-workflow-dot" role="tab" aria-selected="false" aria-label="Step 02: Select Requirements" data-index="1"></button>
+            <button class="workflow-dot js-workflow-dot" role="tab" aria-selected="false" aria-label="Step 03: Submit Bulk RFQ" data-index="2"></button>
+            <button class="workflow-dot js-workflow-dot" role="tab" aria-selected="false" aria-label="Step 04: Discuss Supply Details" data-index="3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 06: PRODUCT SOURCING INFORMATION (Editorial Split)
+         Image: image-16.png (Drip-irrigated young banana plantation)
+         ====================================================================== -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="editorial-split">
+          <div class="split-image-container reveal-item">
+            <img src="images/image-16.png" alt="Young banana saplings in neat rows with modern drip irrigation lines" loading="lazy">
+          </div>
+          <div class="split-content reveal-item">
+            <div class="eyebrow">OUR QUALITY COMMITMENT</div>
+            <h2>HOW WE ENSURE FRESHNESS, CALIBER & SAFE PACKAGING</h2>
+            <p>Every commercial consignment assembled by FARMVEST follows strict field-level traceability. We map each producer cluster by GPS coordinates, soil type, and crop variety, guaranteeing unadulterated origin verification.</p>
+            <p>We work in close coordination with agricultural research universities and state horticulture departments to maintain seed purity, zero-residue cultivation practices, and fair post-harvest handling.</p>
+            <div style="margin-top: 18px;">
+              <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+                <span>REQUEST CUSTOM QUALITY SPECIFICATIONS</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 07: FINAL PRODUCT ENQUIRY CTA
+         Image: image-111.png (Whole and cracked mature coconuts)
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal-item">
+          <div class="cta-banner-bg">
+            <img src="images/image-111.png" alt="Mature coconuts with fibrous husk and fresh white coconut meat" loading="lazy">
+          </div>
+          <div class="cta-banner-content">
+            <div class="eyebrow" style="background: rgba(255,255,255,0.18); color: #8ED199;">
+              WHOLESALE SUPPLY ENQUIRIES
+            </div>
+            <h2>READY TO ORDER DIRECT FROM CERTIFIED FARMER CLUSTERS?</h2>
+            <p>Connect with our procurement managers today to discuss current crop arrivals, volume commitments, and competitive wholesale pricing tailored to your business needs.</p>
+            <div class="btn-group">
+              <button class="btn btn-white" data-open-modal="bulkEnquiryModal">
+                <span>REQUEST WHOLESALE QUOTE</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <a href="contact.html" class="btn btn-secondary">
+                <span>CONTACT OUR SALES DESK</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">FARMVEST</span>
+              <span class="brand-subtitle" style="color: #8ED199;">FARMER PRODUCER COMPANY</span>
+            </div>
+          </div>
+          <p>Connecting dedicated farming communities with quality agricultural products, reliable market opportunities, and meaningful business partnerships across India.</p>
+          <!-- Social Media Links -->
+          <div class="footer-social-links" aria-label="Social Media Channels">
+            <a href="https://facebook.com" class="footer-social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://x.com" class="footer-social-icon" aria-label="X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="footer-social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="footer-social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="footer-social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home (Discovery)</a>
+            <a href="home-2.html" class="footer-link">Home 2 (Stories)</a>
+            <a href="about.html" class="footer-link">About FARMVEST</a>
+            <a href="services.html" class="footer-link">Agricultural Services</a>
+            <a href="products.html" class="footer-link">Wholesale Catalogue</a>
+            <a href="farmers.html" class="footer-link">Our Farmers</a>
+            <a href="membership.html" class="footer-link">Farmer Membership</a>
+            <a href="contact.html" class="footer-link">Contact & Hubs</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Commodities</h4>
+          <div class="footer-links">
+            <a href="products.html?category=vegetables" class="footer-link">Fresh Vegetables</a>
+            <a href="products.html?category=fruits" class="footer-link">Fresh Fruits</a>
+            <a href="products.html?category=rice" class="footer-link">Rice & Grains</a>
+            <a href="products.html?category=millets" class="footer-link">Millets & Superfoods</a>
+            <a href="products.html?category=pulses" class="footer-link">Pulses & Lentils</a>
+            <a href="products.html?category=spices" class="footer-link">Spices & Plantation</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Business & FPC</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link" data-open-modal="bulkEnquiryModal">Bulk Wholesale RFQ</a>
+            <a href="#" class="footer-link" data-open-modal="membershipEnquiryModal">Farmer Membership</a>
+            <a href="services.html" class="footer-link">Produce Procurement</a>
+            <a href="services.html" class="footer-link">Grading & Packaging</a>
+            <a href="contact.html" class="footer-link">Institutional Buyers</a>
+            <a href="about.html" class="footer-link">FPC Governance</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Company Office</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>FARMVEST Producer Company Ltd.<br>APMC Market Complex, Pune - Bangalore Agri Corridor, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 (0) 80 2345 6789 / 9876</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>procurement@farmvest-fpc.demo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 FARMVEST Farmer Producer Company Limited. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="about.html" style="color: rgba(255,255,255,0.6);">Privacy Policy</a>
+          <a href="about.html" style="color: rgba(255,255,255,0.6);">Terms of Trade</a>
+          <a href="contact.html" style="color: rgba(255,255,255,0.6);">Procurement Bylaws</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reusable Modals -->
+  <div class="modal-overlay" id="bulkEnquiryModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow" style="font-size: 0.75rem; margin-bottom: 6px;">WHOLESALE PURCHASE RFQ</span>
+          <h3>Submit Bulk Product Enquiry</h3>
+        </div>
+        <button class="modal-close-btn js-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <form class="js-validated-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name <span class="required">*</span></label>
+            <input type="text" name="name" class="form-input" placeholder="e.g. Rajesh Sharma" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Business / Company Name <span class="required">*</span></label>
+            <input type="text" name="company" class="form-input" placeholder="e.g. Apex Food Processing Ltd." required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="required">*</span></label>
+            <input type="tel" name="phone" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address <span class="required">*</span></label>
+            <input type="email" name="email" class="form-input" placeholder="procurement@company.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Product Interested In <span class="required">*</span></label>
+            <input type="text" name="product" class="form-input" placeholder="e.g. Fresh Cavendish Bananas" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Required Quantity (kg / Tons) <span class="required">*</span></label>
+            <input type="text" name="quantity" class="form-input" placeholder="e.g. 5 Metric Tons" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Delivery Location / Mandi Destination <span class="required">*</span></label>
+          <input type="text" name="location" class="form-input" placeholder="City, State, Warehouse PIN code" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Additional Message / Quality Specifications</label>
+          <textarea name="message" class="form-textarea" rows="3" placeholder="Specify grading size, packaging preferences (crates/bags), delivery schedule, or recurring purchase needs..."></textarea>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 24px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 340px; justify-content: center;">
+            <span>SUBMIT BULK ENQUIRY</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="modal-success-state">
+        <div class="modal-success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Enquiry Submitted Successfully!</h3>
+        <p style="margin: 12px 0 20px;">Thank you for your bulk enquiry. Our commercial procurement team will review your requirements and respond within 24 business hours.</p>
+        <button type="button" class="btn btn-primary js-modal-close">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Details Modal Viewer -->
+  <div class="modal-overlay" id="productDetailModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width: 720px;">
+      <div class="modal-header">
+        <div>
+          <span class="product-category-tag js-modal-prod-category">Vegetables</span>
+          <h3 class="js-modal-prod-title">Product Name</h3>
+        </div>
+        <button class="modal-close-btn js-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; margin-bottom: 24px;">
+        <div style="border-radius: var(--radius-md); overflow: hidden; background: var(--light-bg); aspect-ratio: 1/1;">
+          <img src="" alt="Product view" class="js-modal-prod-img" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div>
+          <h4 style="margin-bottom: 8px;">Product Overview</h4>
+          <p class="js-modal-prod-desc" style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 18px;">Product description goes here.</p>
+          
+          <div style="background: var(--light-bg); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 18px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.88rem;">
+              <span style="color: var(--muted-text);">Packaging Options:</span>
+              <strong class="js-modal-prod-packaging">Plastic Crates / Gunny Bags</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.88rem;">
+              <span style="color: var(--muted-text);">Minimum Order Qty (MOQ):</span>
+              <strong class="js-modal-prod-moq">500 kg</strong>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <button class="btn btn-primary js-modal-prod-enquire-btn" style="width: 100%;">
+              <span>ENQUIRE FOR THIS PRODUCT</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <a href="product-details.html" class="btn btn-outline" style="width: 100%; text-align: center;">
+              <span>VIEW FULL SPECIFICATION PAGE</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

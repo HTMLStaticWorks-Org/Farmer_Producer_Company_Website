@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — FARMVEST Farmer Producer Company | Commercial Desk & Hubs</title>
+  <meta name="description" content="Get in touch with FARMVEST Farmer Producer Company. Submit wholesale produce purchase enquiries, explore contract farming partnerships, or locate regional procurement hubs.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="FARMVEST Home">
+        <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">FARMVEST</span>
+          <span class="brand-subtitle">FARMER PRODUCER COMPANY</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="farmers.html" class="nav-link">Our Farmers</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle js-theme-toggle" aria-label="Toggle Bright/Dark Mode">
+          <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- RTL / LTR Direction Toggle Button -->
+        <button class="rtl-toggle js-rtl-toggle" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Text Direction">
+          <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 8h16M15 4l5 4-5 4"/>
+            <path d="M20 16H4M9 12l-5 4 5 4"/>
+          </svg>
+        </button>
+        <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+          <span>BULK ENQUIRY</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <button class="hamburger-btn js-hamburger-btn" aria-label="Open Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="FARMVEST Home">
+        <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">FARMVEST</span>
+          <span class="brand-subtitle">FARMER PRODUCER COMPANY</span>
+        </div>
+      </a>
+      <button class="drawer-close-btn js-drawer-close" aria-label="Close Navigation Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <!-- 1. All Navlinks Text in Center Alignment -->
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="home-2.html" class="mobile-nav-link">Home 2</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="products.html" class="mobile-nav-link">Products</a>
+      <a href="farmers.html" class="mobile-nav-link">Our Farmers</a>
+      <a href="membership.html" class="mobile-nav-link">Membership</a>
+      <a href="contact.html" class="mobile-nav-link active">Contact</a>
+    </div>
+
+    <!-- 2. Theme and RTL Icons in Center Alignment -->
+    <div class="mobile-drawer-tools">
+      <!-- Bright / Dark Mode Switcher Icon -->
+      <button class="theme-toggle js-theme-toggle" aria-label="Toggle Bright/Dark Mode" title="Toggle Bright/Dark Mode">
+        <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- RTL / LTR Direction Toggle Icon -->
+      <button class="rtl-toggle js-rtl-toggle" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Text Direction">
+        <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8h16M15 4l5 4-5 4"/>
+          <path d="M20 16H4M9 12l-5 4 5 4"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- 3. Last: CTA Button in Center Alignment Orderly -->
+    <div class="mobile-drawer-cta">
+      <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+        <span>BULK ENQUIRY</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         SECTION 01: CONTACT HERO
+         Image: image-34.png (Banana trees grove with heavy fruit bunches)
+         ====================================================================== -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img src="images/image-34.png" alt="Dense lush banana grove with heavy bunches of green bananas hanging close to trunk" loading="eager">
+      </div>
+      <div class="container page-hero-content">
+        <div class="eyebrow" style="background: rgba(255,255,255,0.18); color: #8ED199;">
+          FAST CONTACT DESKS
+        </div>
+        <h1>LET'S CONNECT AND GROW TOGETHER.</h1>
+        <p>Whether you represent an institutional food buyer, retail chain, wholesale mandi merchant, agricultural partner, or an Indian farmer interested in cooperative membership, our commercial desk is at your service.</p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 02: DIRECT CONTACT CHANNELS (4 Info Cards - Centered & Symmetrical)
+         ====================================================================== -->
+    <section class="section bg-white contact-channels-section">
+      <div class="container">
+        <!-- Section Header with Eyebrow, Title & Subtitle -->
+        <div class="section-header reveal-item">
+          <div class="eyebrow">FAST WAYS TO REACH US</div>
+          <h2>OFFICIAL CONTACT NUMBERS & EMAIL DESKS</h2>
+          <p>Reach out directly to our headquarters, wholesale trading desks, dedicated farmer helpline, or APMC aggregation hubs.</p>
+        </div>
+
+        <div class="contact-channels-grid">
+          <!-- Card 1: Registered Office -->
+          <div class="contact-channel-card reveal-item">
+            <div class="contact-channel-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="contact-channel-title">Registered Office</h3>
+            <p class="contact-channel-desc">
+              <strong>FARMVEST Producer Company Ltd.</strong><br>
+              APMC Central Agricultural Yard,<br>
+              Pune - Bangalore National Corridor, India
+            </p>
+            <span class="contact-channel-badge">National Headquarters</span>
+          </div>
+
+          <!-- Card 2: Commercial Phone -->
+          <div class="contact-channel-card reveal-item">
+            <div class="contact-channel-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <h3 class="contact-channel-title">Commercial Phone</h3>
+            <div class="contact-channel-lines">
+              <div class="channel-line">
+                <span class="channel-label">Wholesale Sales:</span>
+                <a href="tel:+918023456789" class="channel-link">+91 (0) 80 2345 6789</a>
+              </div>
+              <div class="channel-line">
+                <span class="channel-label">Farmer Support:</span>
+                <a href="tel:+918023459876" class="channel-link">+91 (0) 80 2345 9876</a>
+              </div>
+              <div class="channel-line">
+                <span class="channel-label">Toll-Free Kisan Desk:</span>
+                <a href="tel:18002334567" class="channel-link highlight">1800 233 4567</a>
+              </div>
+            </div>
+            <span class="contact-channel-badge">Instant Call Response</span>
+          </div>
+
+          <!-- Card 3: Official Email -->
+          <div class="contact-channel-card reveal-item">
+            <div class="contact-channel-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <h3 class="contact-channel-title">Official Email</h3>
+            <div class="contact-channel-lines">
+              <div class="channel-line">
+                <span class="channel-label">Bulk Procurement:</span>
+                <a href="mailto:procurement@farmvest-fpc.demo" class="channel-link">procurement@farmvest-fpc.demo</a>
+              </div>
+              <div class="channel-line">
+                <span class="channel-label">Farmer Desk:</span>
+                <a href="mailto:members@farmvest-fpc.demo" class="channel-link">members@farmvest-fpc.demo</a>
+              </div>
+              <div class="channel-line">
+                <span class="channel-label">General Enquiries:</span>
+                <a href="mailto:info@farmvest-fpc.demo" class="channel-link">info@farmvest-fpc.demo</a>
+              </div>
+            </div>
+            <span class="contact-channel-badge">&lt; 24hr Business Response</span>
+          </div>
+
+          <!-- Card 4: Operating Hours -->
+          <div class="contact-channel-card reveal-item">
+            <div class="contact-channel-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="contact-channel-title">Operating Hours</h3>
+            <div class="contact-channel-lines">
+              <div class="channel-line">
+                <span class="channel-label">Mandi Procurement:</span>
+                <span class="channel-val">Mon – Sat: 05:30 AM – 06:00 PM</span>
+              </div>
+              <div class="channel-line">
+                <span class="channel-label">Commercial Office:</span>
+                <span class="channel-val">Mon – Fri: 09:00 AM – 06:30 PM</span>
+              </div>
+              <div class="channel-line">
+                <span class="channel-label">Sunday Cold-Storage:</span>
+                <span class="channel-val">Scheduled Dispatch Only</span>
+              </div>
+            </div>
+            <span class="contact-channel-badge">6 Days Active Mandi</span>
+          </div>
+        </div>
+      </div>
+    </section>>
+
+    <!-- ======================================================================
+         SECTION 03: CONTACT PURPOSE (4 Enquiry Categories - Even number: 4!)
+         Images: 27 (Fresh carrots), 96 (Green guava), 97 (Watermelon), 98 (Jackfruit)
+         ====================================================================== -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">HOW CAN WE HELP YOU?</div>
+          <h2>CHOOSE YOUR REASON FOR CONTACTING US</h2>
+          <p>Choose the engagement stream that best aligns with your business or farming requirements.</p>
+        </div>
+
+        <div class="grid-4">
+          <!-- 01. Fresh Vegetables Wholesale -->
+          <div class="feature-box reveal-item">
+            <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 18px; aspect-ratio: 16/11;">
+              <img src="images/image-27.png" alt="Freshly pulled cluster of crisp vibrant orange organic carrots" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3>1. Vegetables Wholesale</h3>
+            <p>Daily crated truckloads of graded tomatoes, onions, brassicas, potatoes, chillies, and root vegetables.</p>
+          </div>
+
+          <!-- 02. Orchard Produce -->
+          <div class="feature-box reveal-item">
+            <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 18px; aspect-ratio: 16/11;">
+              <img src="images/image-96.png" alt="Fresh whole green guava with attached green leaf" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3>2. Orchard & Fruit Sourcing</h3>
+            <p>Seasonal contracts for table grapes, pomegranates, mangoes, sweet oranges, guavas, and pineapples.</p>
+          </div>
+
+          <!-- 03. High-Volume Summer Melons -->
+          <div class="feature-box reveal-item">
+            <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 18px; aspect-ratio: 16/11;">
+              <img src="images/image-97.png" alt="Juicy cross-section half of ripe red watermelon" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3>3. High-Volume Melons</h3>
+            <p>Bulk field-harvested watermelons and muskmelons for metro wholesale markets and processing units.</p>
+          </div>
+
+          <!-- 04. Indigenous Specialties -->
+          <div class="feature-box reveal-item">
+            <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 18px; aspect-ratio: 16/11;">
+              <img src="images/image-98.png" alt="Whole green spiky jackfruit with sweet yellow bulbs" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3>4. Indigenous Specialties</h3>
+            <p>Jackfruit bulbs, mature coconuts, raw turmeric rhizomes, ginger roots, and indigenous heritage crops.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 04: BUYER ENQUIRY FORM (Interactive Form)
+         ====================================================================== -->
+    <section class="section bg-white">
+      <div class="container" style="max-width: 900px;">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">WHOLESALE QUOTE REQUEST</div>
+          <h2>SUBMIT YOUR WHOLESALE OR PARTNERSHIP ENQUIRY</h2>
+          <p>Fill out your business requirements below. Our commercial procurement team will generate customized commodity quotations within 24 business hours.</p>
+        </div>
+
+        <div style="background: var(--light-bg); border-radius: var(--radius-xl); padding: clamp(32px, 5vw, 48px); border: 1px solid var(--border-light);" class="reveal-item">
+          <form class="js-validated-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" name="name" class="form-input" placeholder="e.g. Ramesh Kulkarni" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Business / Company Name <span class="required">*</span></label>
+                <input type="text" name="company" class="form-input" placeholder="e.g. Golden Harvest Foods Pvt Ltd" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Official Email <span class="required">*</span></label>
+                <input type="email" name="email" class="form-input" placeholder="purchase@company.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number <span class="required">*</span></label>
+                <input type="tel" name="phone" class="form-input" placeholder="+91 98765 43210" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Agricultural Produce Interested In <span class="required">*</span></label>
+                <input type="text" name="product" class="form-input" placeholder="e.g. Red Onions / Fresh Tomatoes / Basmati" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Estimated Volume / Quantity <span class="required">*</span></label>
+                <input type="text" name="quantity" class="form-input" placeholder="e.g. 10 Metric Tons (Weekly)" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Delivery Location / Mandi Warehouse <span class="required">*</span></label>
+              <input type="text" name="location" class="form-input" placeholder="City, State, Warehouse PIN code" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Detailed Requirements / Grade Specifications</label>
+              <textarea name="message" class="form-textarea" rows="4" placeholder="Detail sizing standards (e.g. 55mm+), packaging preferences (crates/mesh bags), temperature controls, or recurring procurement schedules..."></textarea>
+              <span class="form-help">*Demonstration form: In production this submits directly to enterprise ERP.</span>
+            </div>
+
+            <!-- Standalone form inline success container -->
+            <div class="form-inline-success" style="display: none; background: var(--soft-sage); color: var(--primary-forest); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 18px; text-align: center; font-weight: 600;">
+              Your wholesale enquiry has been recorded! Our procurement manager will contact you promptly.
+            </div>
+
+            <div style="margin-top: 24px;">
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>SUBMIT WHOLESALE ENQUIRY</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 05: REGIONAL HUBS & FINAL CTA
+         Image: image-37.png (Two farmers inspecting dwarf papaya clusters)
+         ====================================================================== -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="editorial-split">
+          <div class="split-image-container reveal-item">
+            <img src="images/image-37.png" alt="Two farmers inspecting dwarf papaya trees laden with clusters of large green fruit" loading="lazy">
+          </div>
+          <div class="split-content reveal-item">
+            <div class="eyebrow">REGIONAL FIELD HUBS</div>
+            <h2>OUR REGIONAL FIELD OFFICES IN MAJOR AGRICULTURAL DISTRICTS</h2>
+            <p>FARMVEST maintains active field offices and aggregation depots across major Indian vegetable, fruit, grain, and spice growing corridors. Each hub is equipped with cold-chain pre-coolers and digital weighment infrastructure.</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0 24px;">
+              <div style="padding: 12px; background: var(--surface-white); border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
+                <strong>Maharashtra Hub</strong>
+                <p style="font-size: 0.85rem; margin: 0;">Nashik & Solapur (Onion, Pomegranate, Grapes)</p>
+              </div>
+              <div style="padding: 12px; background: var(--surface-white); border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
+                <strong>Karnataka Hub</strong>
+                <p style="font-size: 0.85rem; margin: 0;">Belagavi & Kolar (Vegetables, Mango, Ragi)</p>
+              </div>
+              <div style="padding: 12px; background: var(--surface-white); border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
+                <strong>Andhra Pradesh Hub</strong>
+                <p style="font-size: 0.85rem; margin: 0;">Chittoor & Guntur (Chilli, Turmeric, Papaya)</p>
+              </div>
+              <div style="padding: 12px; background: var(--surface-white); border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
+                <strong>Central Grains Hub</strong>
+                <p style="font-size: 0.85rem; margin: 0;">Indore & Raipur (Paddy, Basmati, Pulses)</p>
+              </div>
+            </div>
+
+            <div>
+              <button class="btn btn-primary" data-open-modal="bulkEnquiryModal">
+                <span>REQUEST A VISIT TO OUR FIELD HUBS</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================================================================
+         SECTION 06: NATIONAL AGRICULTURAL FOOTPRINT (Standalone Map Section)
+         Bright, high-contrast interactive Google Map alone
+         ====================================================================== -->
+    <section class="section bright-map-section" id="networkMapSection">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">INTERACTIVE HUB MAP</div>
+          <h2>OUR NATIONAL AGRI-LOGISTICS NETWORK & VILLAGE HUBS</h2>
+          <p>Explore our central commercial headquarters and regional farm-gate aggregation facilities strategically connected along primary Indian transport arteries.</p>
+        </div>
+
+        <div class="bright-map-card reveal-item" style="padding: 0; overflow: hidden; border-radius: 24px;">
+          <div class="bright-map-standalone-viewport">
+            <iframe
+              id="brightMapIframe"
+              src="https://maps.google.com/maps?q=APMC+Market+Yard+Pune+Maharashtra+India&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              width="100%"
+              height="480"
+              style="border:0; display: block;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="FARMVEST Agricultural Network Map">
+            </iframe>
+            <div class="bright-map-overlay-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>APMC Central Agricultural Yard &bull; Pune - Bangalore National Corridor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 07: FREQUENTLY ASKED QUESTIONS (5 Accordion Dropdown Items)
+         Interactive dropdown arrows with smooth animated expansion
+         ====================================================================== -->
+    <section class="section bg-light" id="contactFaqSection">
+      <div class="container" style="max-width: 920px;">
+        <div class="section-header reveal-item">
+          <div class="eyebrow">COMMON QUESTIONS</div>
+          <h2>FREQUENTLY ASKED QUESTIONS ABOUT FARMVEST</h2>
+          <p>Find straightforward answers regarding commercial bulk procurement, delivery logistics, quality standards, and farmer collective membership.</p>
+        </div>
+
+        <div class="faq-accordion-wrapper reveal-item">
+          
+          <!-- FAQ Item 1 -->
+          <div class="faq-accordion-item" data-faq="1">
+            <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-answer-1">
+              <span class="faq-question-left">
+                <span class="faq-number">01</span>
+                <span class="faq-question-text">How can institutional buyers and supermarket chains place bulk orders?</span>
+              </span>
+              <span class="faq-arrow-badge" aria-hidden="true">
+                <svg class="faq-chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-collapse" id="faq-answer-1">
+              <div class="faq-answer-content">
+                <p>Institutional buyers, retail supermarket chains, hotel chains, and exporters can submit a formal Request for Quotation (RFQ) through our online commercial desk or contact our wholesale desk directly at <strong>+91 (0) 80 2345 6789</strong> / <strong>procurement@farmvest-fpc.demo</strong>. We provide customized commodity supply agreements, APEDA-certified grading specifications, recurring delivery schedules, and temperature-controlled logistics from our aggregation hubs.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-accordion-item" data-faq="2">
+            <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-answer-2">
+              <span class="faq-question-left">
+                <span class="faq-number">02</span>
+                <span class="faq-question-text">What are the Minimum Order Quantities (MOQ) and delivery lead times?</span>
+              </span>
+              <span class="faq-arrow-badge" aria-hidden="true">
+                <svg class="faq-chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-collapse" id="faq-answer-2">
+              <div class="faq-answer-content">
+                <p>For fresh perishables (vegetables, melons, and fruits), our standard MOQ for interstate wholesale shipments is <strong>1 Metric Ton (MT)</strong> per commodity. For staple grains, pulses, and oilseeds, standard lots start at <strong>5 MT</strong>. For regional wholesale mandis located within 250 km of our collection hubs, daily crated deliveries can be scheduled with <strong>12 to 24 hours of advance notice</strong>.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-accordion-item" data-faq="3">
+            <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-answer-3">
+              <span class="faq-question-left">
+                <span class="faq-number">03</span>
+                <span class="faq-question-text">How does FARMVEST guarantee produce quality, grading, and food safety?</span>
+              </span>
+              <span class="faq-arrow-badge" aria-hidden="true">
+                <svg class="faq-chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-collapse" id="faq-answer-3">
+              <div class="faq-answer-content">
+                <p>Every batch aggregated across our farmer collectives undergoes automated multi-lane sizing, digital moisture calibration, and batch residue testing adhering to FSSAI and APEDA export norms. Consignments are packed in ventilated food-grade crates or multi-wall sacks with unique lot tracing barcodes connecting shipments directly to the origin farmer group.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-accordion-item" data-faq="4">
+            <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-answer-4">
+              <span class="faq-question-left">
+                <span class="faq-number">04</span>
+                <span class="faq-question-text">How can smallholder and marginal farmers enroll in the FARMVEST collective?</span>
+              </span>
+              <span class="faq-arrow-badge" aria-hidden="true">
+                <svg class="faq-chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-collapse" id="faq-answer-4">
+              <div class="faq-answer-content">
+                <p>Any cultivator with land records in our operational talukas can apply for cooperative membership. Simply visit your nearest village Farmer Interest Group (FIG) meeting or aggregation depot with your Aadhaar card, land patta (RTC/7-12) documents, and bank passbook. Members receive formal share certificates, digital weighment receipts, competitive farm-gate payments within 24 hours, and subsidized agricultural inputs.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-accordion-item" data-faq="5">
+            <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-answer-5">
+              <span class="faq-question-left">
+                <span class="faq-number">05</span>
+                <span class="faq-question-text">Where are your main cold-chain storage and regional aggregation depots situated?</span>
+              </span>
+              <span class="faq-arrow-badge" aria-hidden="true">
+                <svg class="faq-chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-collapse" id="faq-answer-5">
+              <div class="faq-answer-content">
+                <p>Our central commercial headquarters is located at the <strong>APMC Central Agricultural Yard along the Pune – Bangalore National Corridor</strong>. We operate dedicated regional cold-chain pre-cooling and aggregation facilities across <strong>Nashik &amp; Solapur</strong> (Maharashtra), <strong>Belagavi &amp; Kolar</strong> (Karnataka), <strong>Chittoor &amp; Guntur</strong> (Andhra Pradesh), and <strong>Indore &amp; Raipur</strong> (Central India).</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <img src="assets/images/logo.png" alt="FARMVEST Logo" class="brand-logo-img">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">FARMVEST</span>
+              <span class="brand-subtitle" style="color: #8ED199;">FARMER PRODUCER COMPANY</span>
+            </div>
+          </div>
+          <p>Connecting dedicated farming communities with quality agricultural products, reliable market opportunities, and meaningful business partnerships across India.</p>
+          <!-- Social Media Links -->
+          <div class="footer-social-links" aria-label="Social Media Channels">
+            <a href="https://facebook.com" class="footer-social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://x.com" class="footer-social-icon" aria-label="X (formerly Twitter)" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="footer-social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="footer-social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="footer-social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home (Discovery)</a>
+            <a href="home-2.html" class="footer-link">Home 2 (Stories)</a>
+            <a href="about.html" class="footer-link">About FARMVEST</a>
+            <a href="services.html" class="footer-link">Agricultural Services</a>
+            <a href="products.html" class="footer-link">Wholesale Catalogue</a>
+            <a href="farmers.html" class="footer-link">Our Farmers</a>
+            <a href="membership.html" class="footer-link">Farmer Membership</a>
+            <a href="contact.html" class="footer-link">Contact & Hubs</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Commodities</h4>
+          <div class="footer-links">
+            <a href="products.html?category=vegetables" class="footer-link">Fresh Vegetables</a>
+            <a href="products.html?category=fruits" class="footer-link">Fresh Fruits</a>
+            <a href="products.html?category=rice" class="footer-link">Rice & Grains</a>
+            <a href="products.html?category=millets" class="footer-link">Millets & Superfoods</a>
+            <a href="products.html?category=pulses" class="footer-link">Pulses & Lentils</a>
+            <a href="products.html?category=spices" class="footer-link">Spices & Plantation</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Business & FPC</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link" data-open-modal="bulkEnquiryModal">Bulk Wholesale RFQ</a>
+            <a href="#" class="footer-link" data-open-modal="membershipEnquiryModal">Farmer Membership</a>
+            <a href="services.html" class="footer-link">Produce Procurement</a>
+            <a href="services.html" class="footer-link">Grading & Packaging</a>
+            <a href="contact.html" class="footer-link">Institutional Buyers</a>
+            <a href="about.html" class="footer-link">FPC Governance</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Company Office</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>FARMVEST Producer Company Ltd.<br>APMC Market Complex, Pune - Bangalore Agri Corridor, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 (0) 80 2345 6789 / 9876</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>procurement@farmvest-fpc.demo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 FARMVEST Farmer Producer Company Limited. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="about.html" style="color: rgba(255,255,255,0.6);">Privacy Policy</a>
+          <a href="about.html" style="color: rgba(255,255,255,0.6);">Terms of Trade</a>
+          <a href="contact.html" style="color: rgba(255,255,255,0.6);">Procurement Bylaws</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reusable Modal -->
+  <div class="modal-overlay" id="bulkEnquiryModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow" style="font-size: 0.75rem; margin-bottom: 6px;">WHOLESALE PURCHASE RFQ</span>
+          <h3>Submit Bulk Product Enquiry</h3>
+        </div>
+        <button class="modal-close-btn js-modal-close" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <form class="js-validated-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name <span class="required">*</span></label>
+            <input type="text" name="name" class="form-input" placeholder="e.g. Rajesh Sharma" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Business / Company Name <span class="required">*</span></label>
+            <input type="text" name="company" class="form-input" placeholder="e.g. Apex Food Processing Ltd." required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="required">*</span></label>
+            <input type="tel" name="phone" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address <span class="required">*</span></label>
+            <input type="email" name="email" class="form-input" placeholder="procurement@company.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Product Interested In <span class="required">*</span></label>
+            <input type="text" name="product" class="form-input" placeholder="e.g. Farm Fresh Tomatoes" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Required Quantity (kg / Tons) <span class="required">*</span></label>
+            <input type="text" name="quantity" class="form-input" placeholder="e.g. 5 Metric Tons" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Delivery Location / Mandi Destination <span class="required">*</span></label>
+          <input type="text" name="location" class="form-input" placeholder="City, State, Warehouse PIN code" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Additional Message / Quality Specifications</label>
+          <textarea name="message" class="form-textarea" rows="3" placeholder="Specify grading size, packaging preferences (crates/bags), delivery schedule, or recurring purchase needs..."></textarea>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 24px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 340px; justify-content: center;">
+            <span>SUBMIT BULK ENQUIRY</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="modal-success-state">
+        <div class="modal-success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Enquiry Submitted Successfully!</h3>
+        <p style="margin: 12px 0 20px;">Thank you for your bulk enquiry. Our commercial procurement team will review your requirements and respond within 24 business hours.</p>
+        <button type="button" class="btn btn-primary js-modal-close">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
