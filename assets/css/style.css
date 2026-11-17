@@ -365,6 +365,10 @@ p {
   white-space: nowrap;
 }
 
+.btn svg {
+  flex-shrink: 0;
+}
+
 .btn-primary {
   background-color: var(--primary-forest);
   color: #FFFFFF !important;
@@ -2185,6 +2189,56 @@ p {
   line-height: 1.65;
 }
 
+.page-hero-actions {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 60px 0 52px;
+  }
+  .page-hero-content {
+    text-align: center;
+    max-width: 100%;
+  }
+  .page-hero-content .eyebrow {
+    margin-inline: auto;
+  }
+  .page-hero-content h1 {
+    font-size: clamp(1.75rem, 6vw, 2.35rem);
+    line-height: 1.25;
+  }
+  .page-hero-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-inline: auto;
+  }
+  .page-hero-actions,
+  .page-hero-content > div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 22px auto 0;
+    text-align: center;
+  }
+  .page-hero-actions .btn,
+  .page-hero-content > div:last-child > .btn {
+    width: 100%;
+    max-width: 380px;
+    margin-inline: auto;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    padding: 13px 20px;
+    font-size: 0.88rem;
+    line-height: 1.35;
+    box-sizing: border-box;
+  }
+}
+
 /* --------------------------------------------------------------------------
    09. EDITORIAL SPLIT & CARDS
    -------------------------------------------------------------------------- */
@@ -2268,7 +2322,7 @@ p {
     margin-bottom: 4px;
     box-shadow: var(--shadow-md);
   }
-  .split-content h2 {
+  .split-content h2, .split-content h3 {
     font-size: clamp(1.5rem, 5vw, 1.95rem);
     line-height: 1.25;
     margin-bottom: 14px;
@@ -2277,6 +2331,29 @@ p {
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 14px;
+  }
+  .split-actions,
+  .split-content > div:last-child:not(.service-features-list) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto 0;
+    text-align: center;
+    gap: 14px;
+  }
+  .split-actions .btn,
+  .split-content > div:last-child:not(.service-features-list) > .btn {
+    width: 100%;
+    max-width: 380px;
+    margin-inline: auto;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    padding: 13px 20px;
+    font-size: 0.88rem;
+    line-height: 1.35;
+    box-sizing: border-box;
   }
 }
 
@@ -2287,18 +2364,27 @@ p {
   .split-image-container {
     aspect-ratio: 16 / 11;
   }
-  .split-actions {
+  .split-actions,
+  .split-content > div:last-child:not(.service-features-list) {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     gap: 12px;
-    margin-top: 14px;
+    margin: 18px auto 0;
   }
-  .split-actions .btn {
+  .split-actions .btn,
+  .split-content > div:last-child:not(.service-features-list) > .btn {
     width: 100%;
+    max-width: 380px;
+    margin-inline: auto;
     justify-content: center;
     text-align: center;
-    padding: 13px 20px;
+    white-space: normal;
+    padding: 12px 18px;
+    font-size: 0.85rem;
+    line-height: 1.35;
+    box-sizing: border-box;
   }
 }
 
@@ -5980,6 +6066,23 @@ p {
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .cta-banner .btn-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+  .cta-banner .btn-group .btn {
+    width: 100%;
+    max-width: 380px;
+    margin-inline: auto;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+  }
 }
 
 /* --------------------------------------------------------------------------
